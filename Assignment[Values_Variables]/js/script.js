@@ -6,4 +6,7 @@ var yearBorn = 1955;
 console.log(yearBorn);
     */
 
-alert("Hello Word!");
+/* alert("Hello Word!");
+ */
+
+var age;
