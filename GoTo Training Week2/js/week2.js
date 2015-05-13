@@ -43,3 +43,26 @@ console.log(yearsMore);
 //Cast the yearsMore variable as a number
 var futureAge = age + Number (yearsMore);
 console.log(futureAge);
+
+//Make the final output
+console.log(name+" you will be " + futureAge+ "in" +yearsMore+ "years.");
+
+
+//Create an array for comic book prices
+//then total for all comics
+var comicPrices = [4, 12, 5];
+//add them all up
+console.log(comicPrices[0]);
+
+//add a user prompted value to the array
+comicPrices[3]=prompt("What is the value of your 4th book?");
+
+
+var comicsTotal = comicPrices[0] +comicPrices[1] +comicPrices[2] + comicPrices[3];
+console.log("The total value of your comics is " +comicsTotal);
+
+//Prompt the user for which book to add to the value of the first one
+//var indexNumber=prompt("What value would you like to add?");
+
+//var comicsTotal = comicPrices[0] +comicPrices[indexNumber];
+console.log("The total value of your comics is " +comicsTotal);
