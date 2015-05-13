@@ -7,6 +7,11 @@
 
 var muppetNames = ["Keri", "Miss Piggy", "Gonzo", "Ratty Rat" ];
 
-console.log(muppetNames[3]);
+//console.log(muppetNames[3]);
 
 
+//muppetNames[1] = "Gonzo";
+//console.log(muppetNames[1]);
+
+var num = 1;
+console.log(muppetNames[num]);
