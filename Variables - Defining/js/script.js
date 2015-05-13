@@ -26,18 +26,3 @@ var yearOfBirth = 1970; //declaring and defining on same line
  to be calculated in the future.
  */
 
-/*Boolean variable - they are the simplest and smallest pieces of data
-  They are either on or off they store either true or false
- */
-
-var isStudent = true;
-
-var firstName = "Keri"; //you can use single or double quotes as long as your are consistant
-
-var phrase = 'I don\'t know'; /* in this instance you can use the escape operator that tells the machine
- to ignore certain characters so here you would use the backslash
-  */
-
-var phrase = 'I don\'t know \n You\'ll have to speak to the Professor';/*the backslash n creates a new line
-  or line break
-  */
