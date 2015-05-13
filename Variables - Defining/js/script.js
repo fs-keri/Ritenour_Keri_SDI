@@ -2,15 +2,11 @@
  Created by Keri Ritenour
  Section #1
  5/12/15 Week2
- String and Boolean Variables
+ Arrays
  */
 
+var muppetNames = ["Keri", "Miss Piggy", "Gonzo", "Ratty Rat" ];
 
-var isStudent = true;
+console.log(muppetNames[3]);
 
-var firstName = "Keri";
 
-var phrase = 'I don\'t know';
-
-var phrase = 'I don\'t know \n You\'ll have to speak to the Professor';
- 
