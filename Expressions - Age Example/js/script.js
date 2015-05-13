@@ -2,7 +2,7 @@
  * Created by Keri Ritenour
  * Section 1
  * 5/12/15
- * Expressions - Age Example
+ * Expressions - Arit
  */
 
 var yearBorn = 1968;
