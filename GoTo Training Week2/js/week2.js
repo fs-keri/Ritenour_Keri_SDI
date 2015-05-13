@@ -66,3 +66,16 @@ console.log("The total value of your comics is " +comicsTotal);
 
 //var comicsTotal = comicPrices[0] +comicPrices[indexNumber];
 console.log("The total value of your comics is " +comicsTotal);
+
+//Casting as a number VS parseInt
+//COMMENT OUT ALL PRIOR CODE TO CHECK THIS
+console.log(Number("10"));
+console.log(parseInt("10"));
+console.log(Number("7 cats")); //results in NAN which means Not A Number
+console.log(parseInt("7 cats"));//this will find the number inside of the string
+console.log(parseInt("cats 7"));//parseInt will only look at the first part so this would not work either
+
+var userPrompt= prompt("How many dogs do you own?");
+console.log(userPrompt); //results in a black 6 which means text string
+userPrompt= Number(userPrompt);
+console.log(userPrompt);
