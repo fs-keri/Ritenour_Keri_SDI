@@ -9,19 +9,19 @@
 
 //Calculate the discounted price for an item with and without sales tax
 var itemPrice= 40.00;
-var discount= .20;
+var discount= 20;
 var itemDescription= "perfume";
 var taxPercentage= .065;
 
 
 //multiply the item price by the discount percentage
-//var discountPercentage= (discount / 100);
+var discountPercentage= (discount / 100);
 
 //Testing to see if percentage calculation works
 //console.log(discountPercentage);
 
 //total of item with 20 percent discount
-var totalDiscount= itemPrice - (itemPrice * discount);
+var totalDiscount= itemPrice - (itemPrice * discountPercentage);
 //console.log(totalDiscount);
 
 //total calculated with tax
