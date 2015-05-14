@@ -15,5 +15,6 @@ var taxPercentage= .065;
 
 
 //multiply the item price by the discount percentage
-var discountedPrice = (itemPrice - (100 * discount));
-console.log(discountedPrice);
+var discountPercentage= (discount / 100);
+//var discountedPrice = (itemPrice - (100 * discount));
+console.log(discountPercentage);
