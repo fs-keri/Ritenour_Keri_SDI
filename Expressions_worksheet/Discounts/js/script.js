@@ -5,4 +5,14 @@
  * Activity: Expression Worksheet - Discounts
  */
 
-alert("Testing to see if connected.");
+//alert("Testing to see if connected.");
+
+//Calculate the discounted price for an item with and without sales tax
+var itemPrice= 40.00;
+var discountPercentage= 20;
+var itemDescription= "perfume";
+var taxPercentage= .065;
+
+//multiply the item price by the discount percentage
+var discountedPrice = (itemPrice - (itemPrice * discountPercentage));
+console.log(discountedPrice);
