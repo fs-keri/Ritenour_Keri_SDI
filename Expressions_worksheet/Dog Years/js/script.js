@@ -13,5 +13,5 @@ const dogYears=7;
 
 //multiply the the dog human age times to get the dogs actual age
 var result= dogAge * dogYears
-console.log(result);
+console.log("Sparky is " +dogAge+ " human years old which is " +result+ " in dog years");
 
