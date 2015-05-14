@@ -4,3 +4,5 @@
  * Section 1
  * Activity: Expression Worksheet - Slice of Pie Part 2
  */
+
+alert("Testing to see if connected.");

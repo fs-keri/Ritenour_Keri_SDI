@@ -4,3 +4,5 @@
  * Section 1
  * Activity: Expression Worksheet - Average Shopping Bill
  */
+
+alert("Testing to see if connected.");
