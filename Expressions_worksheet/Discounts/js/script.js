@@ -20,7 +20,16 @@ var taxPercentage= .065;
 //Testing to see if percentage calculation works
 //console.log(discountPercentage);
 
+//total of item with 20 percent discount
 var totalDiscount= itemPrice - (itemPrice * discount);
+//console.log(totalDiscount);
 
-//var totalwithTax = (totalDiscount * taxPercentage);
-console.log(totalDiscount);
+//total calculated with tax
+var totalwithTax = totalDiscount + (totalDiscount * taxPercentage);
+//console.log(totalwithTax);
+
+//total calculated without tax
+var totalNoTax= totalDiscount;
+
+console.log("Your " +itemDescription+ " was originally $" +itemPrice+ " but after a " +discount+ "% discount, " +
+    "it is now $" +totalNoTax+ " without tax, and $" +totalwithTax+ " with tax.");
