@@ -13,3 +13,6 @@
 var webPack = [200, 400, 600, 800];
 var webPrompt = prompt("Which website package would you like to purchase?");
 console.log(webPrompt);
+
+//alert the user of the package they have selected
+alert("You have selected the website package number " +webPrompt+ " .");
