@@ -29,3 +29,10 @@ alert("You have selected hosting package number " +hostPrompt+ " .");
 var supportPack = [100, 200, 300];
 var supportPrompt = prompt("Which support package would you like to purchase?");
 console.log(supportPrompt);
+
+//alert the user of the support package they have selected
+alert("You have selected support package number " +supportPrompt+ " .");
+
+//create a package total based on user prompted arrays
+var packTotal = (webPack[2] + hostPack[0] + supportPack[2]);
+console.log(packTotal);
