@@ -24,3 +24,8 @@ console.log(hostPrompt);
 
 //alert the user of the hosting package they have selected
 alert("You have selected hosting package number " +hostPrompt+ " .");
+
+//create the support package
+var supportPack = [100, 200, 300];
+var supportPrompt = prompt("Which support package would you like to purchase?");
+console.log(supportPrompt);
