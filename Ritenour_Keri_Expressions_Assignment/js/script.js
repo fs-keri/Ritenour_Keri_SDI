@@ -16,3 +16,7 @@ console.log(webPrompt);
 
 //alert the user of the package they have selected
 alert("You have selected the website package number " +webPrompt+ " .");
+
+var hostPack = [100, 125, 175, 200];
+var hostPrompt = prompt("Which hosting package would you like to purchase?");
+console.log(hostPrompt);
