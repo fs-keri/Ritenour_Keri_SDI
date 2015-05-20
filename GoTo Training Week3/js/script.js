@@ -10,7 +10,7 @@
 //create a calculator that keeps track of how many pears are in a fruit bowl
 
 //Create our virtual fruit bowl as an array
-var bowlOfFruit =["apple", "banana", "pear", "peach"];
+var bowlOfFruit =["apple", "banana", "pear", "peach", "pear", "tomato", "plum"];
 
 //print our the whole array
 console.log(bowlOfFruit);
@@ -24,5 +24,69 @@ console.log(bowlOfFruit[0])
 //Dot Syntax - fancy for use a period
 console.log(bowlOfFruit.length);
 
-//create a variable to count the number of pears
+//create a variable to count the number of pears in the array
 var totalNumPears = 0;
+
+//test each fruit "item in the array" to see if it is a pear
+
+//if(conditional to test){code that will run if the condition is TRUE}   = sets the value equal to it == or ===
+if(bowlOfFruit[0]==="pear"){
+    //code inside of here will run IF that item is a pear
+    console.log("This is a pear");
+    //add 1 to the total number of pears
+    totalNumPears++; //will return nothing because it is false because it checked the 0 in the array and it is not a pear, but an apple
+    //so we can add an else statement
+}else{
+    //code inside of here will run IF the item is not a pear
+    console.log("Item is not a pear");
+}
+
+//Test the second item in the array by changing the index number from 0 to 1
+if(bowlOfFruit[1]==="pear"){
+    //code inside of here will run IF that item is a pear
+    console.log("This is a pear");
+    //add 1 to the total number of pears
+    totalNumPears++; //will return nothing because it is false because it checked the 0 in the array and it is not a pear, but an apple
+    //so we can add an else statement
+}else {
+    //code inside of here will run IF the item is not a pear
+    console.log("Item is not a pear");
+}
+
+//Test the third item in the array by changing the index number from 0 to 1
+if(bowlOfFruit[2]==="pear"){
+    //code inside of here will run IF that item is a pear
+    console.log("This is a pear");
+    //add 1 to the total number of pears
+    totalNumPears++; //will return nothing because it is false because it checked the 0 in the array and it is not a pear, but an apple
+    //so we can add an else statement
+}else {
+    //code inside of here will run IF the item is not a pear
+    console.log("Item is not a pear");
+}
+
+//Test the fourth item in the array by changing the index number from 0 to 1
+if(bowlOfFruit[3]==="pear"){
+    //code inside of here will run IF that item is a pear
+    console.log("This is a pear");
+    //add 1 to the total number of pears
+    totalNumPears++; //will return nothing because it is false because it checked the 0 in the array and it is not a pear, but an apple
+    //so we can add an else statement
+}else{
+    //code inside of here will run IF the item is not a pear
+    console.log("Item is not a pear");}
+
+//Test the fifth item in the array by changing the index number from 0 to 1
+if(bowlOfFruit[4]==="pear"){
+    //code inside of here will run IF that item is a pear
+    console.log("This is a pear");
+    //add 1 to the total number of pears
+    totalNumPears++; //will return nothing because it is false because it checked the 0 in the array and it is not a pear, but an apple
+    //so we can add an else statement
+}else{
+    //code inside of here will run IF the item is not a pear
+    console.log("Item is not a pear");}
+
+
+//console log the total number of pears
+console.log(totalNumPears+ " total number of pears in the fruit bowl");
