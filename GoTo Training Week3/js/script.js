@@ -10,7 +10,7 @@
 //create a calculator that keeps track of how many pears are in a fruit bowl
 
 //Create our virtual fruit bowl as an array
-var bowlOfFruit =["apple", "banana", "pear", "peach", "pear", "tomato", "plum"];
+var bowlOfFruit =["apple", "banana", "pear", "peach", "pear", "tomato", "plum", "kiwi", "pear"];
 
 //print our the whole array
 console.log(bowlOfFruit);
@@ -90,3 +90,29 @@ if(bowlOfFruit[4]==="pear"){
 
 //console log the total number of pears
 console.log(totalNumPears+ " total number of pears in the fruit bowl");
+
+//cycling through arrays, For Loop
+/*
+for(initialize a counting variable; condition to test; increment of change to counting variable){
+  code to run for each loop
+}
+ */
+
+//create new variable to track the number of pears in an array
+var pearsTotal = 0;
+
+for(var i=0; i<bowlOfFruit.length; i++){
+    //code to run each loop
+    console.log("The value of i is "+i);
+    //log each item in an array
+    console.log(bowlOfFruit[i]);
+    //test each item in the array to see if it is a pear
+    if(bowlOfFruit[i]==="pear") {
+        console.log("item is a pear");
+        //add one to total
+        pearsTotal++;
+    }else{
+        console.log("not a pear");
+    }
+}
+console.log("The total number of pears in the bowl is " +pearsTotal);
