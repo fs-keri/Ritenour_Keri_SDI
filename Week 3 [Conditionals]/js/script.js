@@ -1,5 +1,8 @@
 /**
- * Created by kerilritenour on 5/19/15.
+ * Keri Ritenour
+ * 5/19/15
+ * Section 1
+ * Conditionals Screencasts
  */
 
 
