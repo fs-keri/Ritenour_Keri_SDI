@@ -16,10 +16,17 @@
 // Unit ( a string holding an "F" or a "C"
 
 //Result
-// "The temperature is X degrees Celsius" or "The tempterature is X degrees Fahrenheit.
+// "The temperature is X degrees Celsius" or "The temperature is X degrees Fahrenheit.
 
 //Data sets to test
 // 32 F is 0C
 // 100C is 212F
 // 90F is 32.22C
 
+
+var userInput= prompt("Enter F for Fahrenheit or C for Celsius:");
+if(degree === "F"){
+    prompt("What temperature ")
+};
+
+var degree = (prompt("Enter the F for Fahrenheit or C for Celsius: ");

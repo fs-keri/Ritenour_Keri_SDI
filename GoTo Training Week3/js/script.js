@@ -129,11 +129,11 @@ if(userInput===""){
 }
 
 //what if you ask for a number and test if that is what the user typed in
-var numImput = prompt("Type in any number");
-if(isNaN(numImput)){
+var numInput = prompt("Type in any number");
+if(isNaN(numInput)){
     //this code will run if the user does not type in a number
     //reprompt using the same variable again
-    numImput=prompt("Please only use numbers.\n Type in any number!");
+    numInput=prompt("Please only use numbers.\n Type in any number!");
 }
 console.log(isNaN("cat")); //true
 console.log(isNaN(7)); //false
