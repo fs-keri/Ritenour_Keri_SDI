@@ -23,14 +23,18 @@
 // 100C is 212F
 // 90F is 32.22C
 
-
-var unit= "F" ^ "C";
+var far=32;
+var cel=0;
 var degrees;
 
 var userInput= prompt("Enter F for Fahrenheit or C for Celsius:");
-if(degrees === "F"){
-    userInput2=prompt("What temperature number do you want to convert?")
-}userinput3=prompt("What temperature number do you want to convert?");
+userInput2=prompt("What temperature number do you want to convert?");
+if (!(degrees !== "F" || !32)) {
+    userInput2 = prompt("What temperature number do you want to convert?")
+
+} else {
+
+};
 
 
 
