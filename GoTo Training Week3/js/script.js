@@ -116,3 +116,30 @@ for(var i=0; i<bowlOfFruit.length; i++){
     }
 }
 console.log("The total number of pears in the bowl is " +pearsTotal);
+
+//VALIDATE USER PROMPTS
+//ask user for input
+var userInput = prompt("Please type in your name:");
+
+//validate propmpt to see if blank
+if(userInput===""){
+    //code will run if user leaves it blank
+    //re-prompt the user using the same variable above
+    userInput=("Please do not leave blank! \n What is your name?");
+}
+
+//what if you ask for a number and test if that is what the user typed in
+var numImput = prompt("Type in any number");
+if(isNAN(numImput)){
+    //this code will run if the user does not type in a number
+    //reprompt using the same variable again
+    numImput=prompt("Please only use numbers.\n Type in any number!");
+}
+console.log(isNaN("cat")); //true
+console.log(isNaN(7)); //false
+
+var thirdprompt=prompt("Type in a number 1-10");
+//validate for both blank and a number
+if(thirdprompt==="" || isNaN){
+    thirdprompt=prompt("Please do not leave blank and only use number.\n Type in a number 1-10.");
+}
