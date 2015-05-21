@@ -53,7 +53,37 @@
         <entry file="file://$PROJECT_DIR$/Week 3 [Conditionals]/notes">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="8" />
+              <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script4.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Week 3 [Conditionals]/js/script4.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.720524">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script3.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Week 3 [Conditionals]/js/script3.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index4.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Week 3 [Conditionals]/index4.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.125">
+              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -69,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GoTo Training Week3/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58515286">
-              <caret line="131" column="44" selection-start-line="131" selection-start-column="44" selection-end-line="131" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="132" column="20" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -139,9 +169,11 @@
         <option value="$PROJECT_DIR$/Week 3 [Conditionals]/index2.html" />
         <option value="$PROJECT_DIR$/Week 3 [Conditionals]/index3.html" />
         <option value="$PROJECT_DIR$/Week 3 [Conditionals]/js/script3.js" />
-        <option value="$PROJECT_DIR$/Week 3 [Conditionals]/notes" />
         <option value="$PROJECT_DIR$/GoTo Training Week3/index.html" />
         <option value="$PROJECT_DIR$/GoTo Training Week3/js/script.js" />
+        <option value="$PROJECT_DIR$/Week 3 [Conditionals]/notes" />
+        <option value="$PROJECT_DIR$/Week 3 [Conditionals]/index4.html" />
+        <option value="$PROJECT_DIR$/Week 3 [Conditionals]/js/script4.js" />
       </list>
     </option>
   </component>
@@ -153,7 +185,7 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="77" />
+    <option name="x" value="553" />
     <option name="y" value="23" />
     <option name="width" value="1394" />
     <option name="height" value="784" />
@@ -372,7 +404,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="77" y="23" width="1394" height="784" extended-state="0" />
+    <frame x="553" y="23" width="1394" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -626,22 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Week 3 [Conditionals]/js/script3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week 3 [Conditionals]/notes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Week 3 [Conditionals]/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -668,8 +684,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GoTo Training Week3/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58515286">
-          <caret line="131" column="44" selection-start-line="131" selection-start-column="44" selection-end-line="131" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="132" column="20" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week 3 [Conditionals]/notes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week 3 [Conditionals]/js/script3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week 3 [Conditionals]/index4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week 3 [Conditionals]/js/script4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.720524">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>

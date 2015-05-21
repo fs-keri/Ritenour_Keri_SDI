@@ -128,3 +128,18 @@ Common Misconceptions of Relational Expressions and Logical Operators
 
         Always work in pairs. If you are going to do something with more than a pair
         you must bring them down into pairs
+
+
+Ternaries
+    are shorter, one-line ways to write a conditional statement
+    requires three components
+    the ternarie operator is a ?
+
+    if(condition){
+        do if true;
+    }else{
+        do if false;
+    }
+
+    to shorten the above in a teranary operator is looks like this:
+    (condition) ? do if true : do if false;
