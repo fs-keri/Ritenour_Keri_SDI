@@ -17,7 +17,7 @@ console.log(bowlOfFruit);
 
 //to print out a specific fruit, use the index number
 //index numbers start with 0, not 1
-console.log(bowlOfFruit[0])
+console.log(bowlOfFruit[0]);
 
 //how many items are inside of the array
 //property of an array called length
@@ -121,7 +121,7 @@ console.log("The total number of pears in the bowl is " +pearsTotal);
 //ask user for input
 var userInput = prompt("Please type in your name:");
 
-//validate propmpt to see if blank
+//validate prompt to see if blank
 if(userInput===""){
     //code will run if user leaves it blank
     //re-prompt the user using the same variable above
@@ -130,7 +130,7 @@ if(userInput===""){
 
 //what if you ask for a number and test if that is what the user typed in
 var numImput = prompt("Type in any number");
-if(isNAN(numImput)){
+if(isNaN(numImput)){
     //this code will run if the user does not type in a number
     //reprompt using the same variable again
     numImput=prompt("Please only use numbers.\n Type in any number!");
@@ -138,8 +138,8 @@ if(isNAN(numImput)){
 console.log(isNaN("cat")); //true
 console.log(isNaN(7)); //false
 
-var thirdprompt=prompt("Type in a number 1-10");
+var thirdPrompt=prompt("Type in a number 1-10");
 //validate for both blank and a number
-if(thirdprompt==="" || isNaN){
-    thirdprompt=prompt("Please do not leave blank and only use number.\n Type in a number 1-10.");
+if(thirdPrompt==="" || isNaN){
+    thirdPrompt=prompt("Please do not leave blank and only use number.\n Type in a number 1-10.");
 }
