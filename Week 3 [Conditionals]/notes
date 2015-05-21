@@ -133,7 +133,7 @@ Common Misconceptions of Relational Expressions and Logical Operators
 Ternaries
     are shorter, one-line ways to write a conditional statement
     requires three components
-    the ternarie operator is a ?
+    the ternary operator is a ?
 
     if(condition){
         do if true;
