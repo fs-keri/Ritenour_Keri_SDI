@@ -18,3 +18,13 @@ if(vehPrice==="" && isNaN){
     var vehPrice;
 }
 console.log(vehPrice);
+
+//create a variable to prompt the user for the interest rate they would like
+var interestRate=prompt("Select either a 6, 8 or 9 percent interest rate?");
+//validate for both blank and a number
+if(Number(interestRate==="" || isNaN)){
+    interestRate=prompt("Please do not leave blank and enter the interest rate");
+}else {
+    var interestCompute=interestRate/100;
+}
+console.log(interestCompute);
