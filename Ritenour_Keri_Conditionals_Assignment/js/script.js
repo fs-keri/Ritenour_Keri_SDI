@@ -38,7 +38,11 @@ if(monthsFinanced < 24){
 console.log(monthsFinanced);
 
 
+((vehPrice * interestRate) > 10000) ? prompt("Select enter to proceed.") : prompt("You are ineligible loan.");
 
-console.log("The price of the vehicle is " +(vehPrice)+ " and the interest rate is " +(interestCompute)+ "%. /n" +
-    "The total cost of the vehicle is " +(vehCost)+ " and your monthly payments are " +(totalPayment)+ ".");
+var total = vehPrice * interestRate;
+var payments= total / monthsFinanced;
+
+console.log("The price of the vehicle is $"+(vehPrice)+ " and the interest rate is " +(interestRate)+ "%. /n" +
+    "The total cost of the vehicle is " +(total)+ " and your monthly payments are " +(payments)+ ".");
 
