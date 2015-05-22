@@ -40,7 +40,7 @@ Equality Operators
     They also compare two objects and come up with a true or
     false, like the relational operators.
 
-    (note be using in this class. It is not the best way to get
+    (not be using in this class. It is not the best way to get
     things done in JavaScript)
 
 
