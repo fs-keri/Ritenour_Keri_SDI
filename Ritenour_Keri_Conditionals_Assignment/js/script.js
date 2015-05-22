@@ -5,4 +5,5 @@
  * Conditionals Assignment
  */
 
-alert("Testing to see if connected");
+//alert("Testing to see if connected");
+
