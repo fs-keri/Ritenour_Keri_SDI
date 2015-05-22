@@ -22,12 +22,10 @@ console.log(vehPrice);
 //create a variable to prompt the user for the interest rate they would like
 var interestRate=prompt("Select either a 6, 8 or 9 percent interest rate?");
 //validate for both blank and a number
-if (interestRate==="" || isNaN){
+if (interestRate==="" && isNaN){
     interestRate=prompt("Please do not leave blank and enter the interest rate");
-}else {
-    var interestCompute=interestRate/100;
 }
-console.log(interestCompute);
+console.log(interestRate);
 
 //create a variable to prompt the user for the months they would like to finance the vehicle
 var monthsPrompt=prompt("How many months would you like to finance the vehicle?");
@@ -38,3 +36,9 @@ if(monthsFinanced < 24){
     var monthsFinanced = monthsPrompt;
 }
 console.log(monthsFinanced);
+
+
+
+console.log("The price of the vehicle is " +(vehPrice)+ " and the interest rate is " +(interestCompute)+ "%. /n" +
+    "The total cost of the vehicle is " +(vehCost)+ " and your monthly payments are " +(totalPayment)+ ".");
+
