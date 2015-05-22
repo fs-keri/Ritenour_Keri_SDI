@@ -37,12 +37,26 @@ if(monthsFinanced < 24){
 }
 console.log(monthsFinanced);
 
-
+//ternary to tell the user that there loan is eligible or ineligible
 ((vehPrice * interestRate) > 10000) ? prompt("Select enter to proceed.") : prompt("You are ineligible loan.");
 
-var total = vehPrice * interestRate;
-var payments= total / monthsFinanced;
+var total;
+total = vehPrice * (interestRate / 100);
+var payments;
+payments= total / monthsFinanced;
 
-console.log("The price of the vehicle is $"+(vehPrice)+ " and the interest rate is " +(interestRate)+ "%. /n" +
-    "The total cost of the vehicle is " +(total)+ " and your monthly payments are " +(payments)+ ".");
+//Print final output to user
+console.log("The price of the vehicle is $"+(vehPrice)+ " and the interest rate is " +(interestRate)+ "%. " +
+    "The total cost of the vehicle is $" +(total)+ " and your monthly payments are " +(payments)+ ".");
 
+
+/*Final Testing
+ I typed in 10000 for vehPrice, 6 for interestRate and 60 for monthsFinanced.
+ It gave me a total of $600 and a monthly payment of $10.
+
+ I typed in 300 for vehPrice, 6 for interestRate and 10 for monthsFinanced.
+ It notified me that I was ineligible for a loan.
+
+ I typed in 30000 for vehPrice, 8 for interestRate and 36 for monthsFinanced.
+ It gave me a total of $2700 and a monthly payment of $75.
+ */
