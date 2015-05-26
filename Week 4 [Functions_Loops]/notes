@@ -1,0 +1,24 @@
+4 Types of code:
+    1- Sequential - lines by line; in order (expressions)
+    2- Conditional - allows code to let computer run based on certain situations (if statement, ternaries)
+    3- Reusable - allows us to have code that is written once, but able to be used again and again by the machine (functions)
+        - DRY - Don't Repeat Yourself
+
+
+Functions are for storage
+    A variable stores values
+    Functions store blocks of code
+
+  Functions are best though of as little factories, designed to do a task (stuff goes in, stuff can come out)
+
+  Ways to think about functions:
+    -references to another receipe you might use many times
+    -instead of printing the same recipe in many pages of a recipe book, you reference the frosting on a different page number
+    -In games, functions allow you to have code in one place and run that code as many times as you want
+
+Functions - blocks of code that run processes for you.
+
+Different types of functions:
+    -Functions - a.k.a "Normal Function"
+    -Procedures
+    -Anonymous Functions
