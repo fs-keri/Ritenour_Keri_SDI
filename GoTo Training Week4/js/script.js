@@ -5,4 +5,4 @@
  * GoTo Training Week 4
  */
 
-alert("Testing to see if connected");
+//alert("Testing to see if connected");
