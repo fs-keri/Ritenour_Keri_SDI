@@ -34,3 +34,6 @@ Basic Structure
         Instead of "if" we are going to use the keyword "function"
 
         Functions have names so we can refer to them later
+
+        Setting up a function isn't actually enough to make the code run, the function has to be called
+        or invoked.
