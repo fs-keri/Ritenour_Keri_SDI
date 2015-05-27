@@ -30,6 +30,7 @@ var circum = calculateCircum(radius);
 //create result to print to console
 console.log("The circumference of the circle is " +circum);
 
+//define function
 function calculateCircum(radius){
     return ((radius * 2) * 3.14);
 }
@@ -46,6 +47,7 @@ var stings = calculateSting(weight);
 //create result to print to console
 console.log("It takes " +stings+ " bee stings to kill this animal.");
 
+//define function
 function calculateSting(weight){
     return (weight * 10);
 }
