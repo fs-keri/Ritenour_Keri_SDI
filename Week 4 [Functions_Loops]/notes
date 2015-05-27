@@ -56,3 +56,5 @@ The basic functions are Arguments and the storage area is called Parameters
 Many programmers and developers will use the terms arguments and parameters interchangeably, but they are not the same
 One is the information being passed in (Arguments - they are always in the function call)
 One is the storage container for that information (Parameters- always in the function definition)
+
+The returned values are the things going out of the function
