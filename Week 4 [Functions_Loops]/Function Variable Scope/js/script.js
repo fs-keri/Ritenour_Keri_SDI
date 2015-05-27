@@ -5,7 +5,9 @@
  * Functions - Variable Scope
  */
 
-//define the function
+var width = 5; //this is scoped outside of the function or the larger document containing it
+
+//setting up the function
 function calcArea(){
     var width = 20;
     var height = 30;
@@ -15,4 +17,7 @@ function calcArea(){
 
 
 //Call the function
-calcArea();
+calcArea();  //this will prefer to always use the variable within the function
+            //in this case, we say the width variable is scoped to calcArea
+
+//if we type console.log(width) before the calcArea, the result will be 5
