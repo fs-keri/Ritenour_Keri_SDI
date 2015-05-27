@@ -81,3 +81,10 @@ Which one should you use?
     Anonymous functions are used for the sake of code brevity. We can limit them to
     certain parts of the code and better scope.
     At this point it is more of a style choice
+
+
+LOOPS
+  -loops save us time
+
+  While Loops
+    - looks very much like an "if" statement
