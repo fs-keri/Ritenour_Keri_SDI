@@ -35,11 +35,31 @@ while(condition to test){
 while(min==="" || isNaN(min)){
     //this will run if conditional inside of () is true
     //re-prompt the user with the same variable name
-    min=prompt("Please do not leave blank and only use numbers.");
 
     if(min===""){
-        min=prompt("Please do not leave blank and only use numbers. \Please type in a minimum number");
+        min=prompt("Please do not leave blank and only use numbers. \Please type in a min number");
     }else if(isNaN(min)){
-        min=prompt("Please only use numbers. \Please type in a minimum number");
+        min=prompt("Please only use numbers. \n Please type in a min number");
     }
 }
+
+//prompt the user for a max number
+var max =prompt("Please type in a max number:");
+
+//validate the max number
+while(max==="" || isNaN(max) || (Number(max)<Number(min))){
+    //reprompt the user
+    if(max===""){
+        max=prompt("Please do not leave blank. \n Please type in a max number");
+    }else if(max<min){
+        max =prompt("The max value must be higher than your min value of " +min+ ". \nPlease type in a max value")
+    }
+    else {
+        max=prompt("Please only use numbers. \n Please type in a max number")
+    }
+}
+
+
+
+
+
