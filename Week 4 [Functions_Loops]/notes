@@ -37,3 +37,22 @@ Basic Structure
 
         Setting up a function isn't actually enough to make the code run, the function has to be called
         or invoked.
+
+The basic functions are Arguments and the storage area is called Parameters
+    Parameters allow us to store and use different basic material as we need them
+    Many Arguments can fit a certain parameter
+
+    Not all functions have to have parameters or arguments, they can just have that code
+    block
+
+    Example:
+        funcName(argument1, argument2) //this is the function call
+
+        function funcName(parameter1, parameter2){
+            //code the function runs
+        } //this is the function definition
+
+
+Many programmers and developers will use the terms arguments and parameters interchangeably, but they are not the same
+One is the information being passed in (Arguments - they are always in the function call)
+One is the storage container for that information (Parameters- always in the function definition)
