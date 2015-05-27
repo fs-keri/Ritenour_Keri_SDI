@@ -87,4 +87,8 @@ LOOPS
   -loops save us time
 
   While Loops
-    - looks very much like an "if" statement
+  Do While Loops
+  For Loops
+
+  Break; jumps out of the loop; this is a manual way to get out of the loop
+  Continue; means jump back up and check the condition again (moves us back up to the top)

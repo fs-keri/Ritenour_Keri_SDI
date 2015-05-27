@@ -49,11 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="notes" pinned="false" current-in-tab="false">
+      <file leaf-file-name="notes" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Week 4 [Functions_Loops]/notes">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.957204">
+              <caret line="93" column="90" selection-start-line="93" selection-start-column="90" selection-end-line="93" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -81,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Week 4 [Functions_Loops]/For Loops/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.088626295">
+            <state vertical-scroll-proportion="-2.5">
               <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
               <folding />
             </state>
@@ -151,13 +151,13 @@
         <option value="$PROJECT_DIR$/Week 4 [Functions_Loops]/Function_Anonymous Functions/js/script.js" />
         <option value="$PROJECT_DIR$/Functions_worksheet/index.html" />
         <option value="$PROJECT_DIR$/Functions_worksheet/js/script.js" />
-        <option value="$PROJECT_DIR$/Week 4 [Functions_Loops]/notes" />
         <option value="$PROJECT_DIR$/Week 4 [Functions_Loops]/While Loops/index.html" />
         <option value="$PROJECT_DIR$/Week 4 [Functions_Loops]/While Loops/js/script.js" />
         <option value="$PROJECT_DIR$/Week 4 [Functions_Loops]/Do While Loops/index.html" />
         <option value="$PROJECT_DIR$/Week 4 [Functions_Loops]/Do While Loops/js/script.js" />
         <option value="$PROJECT_DIR$/Week 4 [Functions_Loops]/For Loops/index.html" />
         <option value="$PROJECT_DIR$/Week 4 [Functions_Loops]/For Loops/js/script.js" />
+        <option value="$PROJECT_DIR$/Week 4 [Functions_Loops]/notes" />
       </list>
     </option>
   </component>
@@ -169,7 +169,7 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="682" />
+    <option name="x" value="560" />
     <option name="y" value="23" />
     <option name="width" value="1394" />
     <option name="height" value="798" />
@@ -395,7 +395,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="682" y="23" width="1394" height="798" extended-state="0" />
+    <frame x="560" y="23" width="1394" height="798" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -813,14 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Week 4 [Functions_Loops]/notes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="89" column="44" selection-start-line="89" selection-start-column="44" selection-end-line="89" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Week 4 [Functions_Loops]/Function_Return Values/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -841,8 +833,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Week 4 [Functions_Loops]/For Loops/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.088626295">
+        <state vertical-scroll-proportion="-2.5">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week 4 [Functions_Loops]/notes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.957204">
+          <caret line="93" column="90" selection-start-line="93" selection-start-column="90" selection-end-line="93" selection-end-column="90" />
           <folding />
         </state>
       </provider>
