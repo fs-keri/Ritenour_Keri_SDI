@@ -58,3 +58,7 @@ One is the information being passed in (Arguments - they are always in the funct
 One is the storage container for that information (Parameters- always in the function definition)
 
 The returned values are the things going out of the function
+
+Procedures vs Functions
+    -they are both functions, but the difference here is that:
+        -functions return values and procedures don't.
