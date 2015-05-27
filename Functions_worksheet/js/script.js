@@ -38,3 +38,14 @@ function calculateCircum(radius){
 
 //Calculate how many bee stings are needed to kill an animal
 //create a variable for the victim's weight
+var weight = 189;
+
+//create a variable for the result
+var stings = calculateSting(weight);
+
+//create result to print to console
+console.log("It takes " +stings+ " bee stings to kill this animal.");
+
+function calculateSting(weight){
+    return (weight * 10);
+}
