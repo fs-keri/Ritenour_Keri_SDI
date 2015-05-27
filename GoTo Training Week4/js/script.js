@@ -60,6 +60,10 @@ while(max==="" || isNaN(max) || (Number(max)<Number(min))){
 }
 
 
-
+//find a random number
+//Math.random() - gives a random number between 0 and 1
+//Math.round(variable) -basic rounding. .5+ goes up otherwise it goes down
+var randomNumber = Math.random() * (max-min) + Number(min);
+console.log(randomNumber);
 
 
