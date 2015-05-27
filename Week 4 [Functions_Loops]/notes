@@ -62,3 +62,22 @@ The returned values are the things going out of the function
 Procedures vs Functions
     -they are both functions, but the difference here is that:
         -functions return values and procedures don't.
+
+
+Anonymous Functions
+    -also called closures
+    -are functions created as the code is run
+    -example
+        var functionName = function(){
+            //code the function runs
+        }
+        functionName(); //function call
+
+
+    *Downside to anonymous functions is that they have to be declared before they are called
+
+
+Which one should you use?
+    Anonymous functions are used for the sake of code brevity. We can limit them to
+    certain parts of the code and better scope.
+    At this point it is more of a style choice
