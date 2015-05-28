@@ -1,3 +1,110 @@
- A variable is a container. It's us grabbing a little piece of computer memory and giving it a name,
+ A VARIABLE is a container. It's us grabbing a little piece of computer memory and giving it a name,
  so we can use it while our JavaScript is running. We create it, we name it, we put a value in it,
  and then we change the value as we need to.
+
+ You use the word var, all written in lowercase, which is part of the JavaScript language, and then the word you want. The name of the variable itself is up to us, and it should represent the piece of data that we want to hold, in this case year, but it could be customerEmail, or todaysDate
+
+   var year;
+   var age;
+
+
+ So what we're doing with this line of code is we're just carving out a little area of memory to hold a value. And right now after this line var year runs, this variable exists. And right now after this line var year runs, this variable exists.
+ It has a name, year, but it doesn't have a value. It's regarded as undefined, and undefined has a special meaning in JavaScript. Now there is no real point in having a variable that stays undefined, so we can define, or set, the initial value of the variable when we create it. We could do that as two statements: first, var year to make the variable and then year = 2011 to set it. Now the equal sign here is setting the variable to the value 2011. It is an instruction.
+
+ Now, more typically if you're doing this, you just combine these into one statement, var year = 2011, to both define it and set its value.
+                                                                                                                                                       var year = 2011;
+                                                                                                                                                     if you're creating multiple variables at the same time, instead of spreading them across multiple lines, you can create one JavaScript statement and just separate the names of the variables with commas, and that would give you three variables here.
+
+ var month, day, year;
+                                                                                                                                                     Similarly, if you're creating and initializing them with these initial values, you can separate those with commas as well to both create them and set them.
+
+   var year = 2011;
+   var month = 3;
+   var day = 7;
+
+ can also be written as
+   var year=2011, month=3, day=7;
+
+ So just by running that one line, we get an area of memory allocated for us with the name that we chose.
+
+ you can use either double quotes or you can use single quotes to surround a string of text, but just don't mix them. Don't open with double quotes and close with single quotes. I tend to use double quotes because that's more common in other languages, but you'll see both ways.
+   var month = "March" can also be written as var month = 'March'
+
+ And we can store Boolean values, which is just a value that can either be true or false. Now with these you do not need the quotes around them. JavaScript understands the words true and false written in lowercase.
+   var myValue = true;
+   var yourValue = false;
+
+ The point of making variables is that we're going to use them.
+
+ We're going to manipulate them, ask questions of them, but that all begins by knowing how to make them.
+
+ CONDITIONALS
+ we need to start asking questions, being able to have code that only runs under certain conditions rather than all the time, and we begin this with the classic if statement
+
+   if( condition ){
+      //code goes here
+   }
+
+   We have the word if, and then we have a condition inside parentheses and then if that condition is true, we will execute whatever code is inside    the braces here.
+
+  So in this case, the parentheses are used to mark out whatever our condition is, and the curly braces area used to mark out what we'll do if    that's true, which could be one JavaScript statement, could be a dozen, could be 100. Now whatever the condition is, whatever we are asking,   whatever is in the parentheses here must evaluate as true or false. So if I have a variable called a and I want to see if it's less than 50, I don't care what it is.
+
+   All conditions must boil down to simply true or false. Now, if I have a variable called c and I want to check that it's equal to something, to check equality in JavaScript, as in other C-based languages, I can use the double equals sign. There is no spaces between them. Double equals is considered a single operator. Now heads up, even for the programmers, JavaScript has another way of checking equality, the triple equal sign.
+
+ In a condition, if you're asking if something is equal to something else, you will never use a single equal sign. As we saw with variables, a single equal sign is an assignment. It's a command. It sets a value, not checks a value.
+
+    if( a===20 ){
+          //code goes here
+       }
+
+
+ And if I want to check that a variable is not equal another value, it's the exclamation mark and equal sign, in this case checking that the variable d is not equal to 100.
+
+    if( d != 100 ){
+          //code goes here
+       }
+
+    When you have several statements surrounded by these curly braces, this is what's referred to as a code block, and this is all the curly braces do. They group a section of code together. They don't have any other meaning than that.
+
+ if you wanted something else to happen, you can follow the if with an else statement and in this case have another code block that runs different code. If the first condition is true, we run the code in the first block; otherwise, we run the code in the second block. And you can even nest them inside each other and check a different condition. But don't nest too deep.
+
+      if( d != 100 ){
+                //code goes here
+             }else{
+                //otherwise different code
+             }
+
+
+OPERATORS
+Just about every statement we will write is going to involve an operation, moving data from one place to another, adding, subtracting. Now to perform a lot of these operations we need operators, and that just means the symbols that we are using to manipulate our values. The most obvious are probably the arithmetic operators. We have addition, we have subtraction, an asterisk for multiplication, forward slash for division. Now you typically see these used along with the equal sign, and the equal sign is formally called the assignment operator.
+
+When we hit the statement we are going to execute whatever's on the right of the equal sign and use it to assign of the value to whatever is on the left of the equal sign.
+
+     result = a + b;
+
+
+So for those of you who are new to programming, remember that when you see a single equal sign that's not a polite description; that's a command. We are setting a value. We are assigning. Now you will often see the same variable being used on both sides of the equal sign. In this case, we are just adding 10 to the variable called score and storing the result back in score.
+
+     score = score + 10;
+
+Now adding to a variable or subtracting to a variable happens so often that there is actually a shorthand for this.
+
+     score += 10;
+
+Order of operations: PEMDAS (order of operations: parenthesis, exponents, multiplication, division, addition and subtraction)
+
+     = assignment
+     == equality (can be string or number and will see as equal  var= 5 versus var="5"
+     === strict equality (must be identical, not just equal so var = 5 versus var="5" is not equal)
+
+     && and
+     || or
+
+  if I am just interested in adding 1 to a variable, I can also use another operator, which is ++. If you want to get geeky about this, this is what's called a unary operator, meaning it only needs one thing to act on. Now the plus plus operator, which increments by 1, can be used either after the variable name or before the variable name, so a++ or ++a. And the flip side is true.
+
+  a++
+
+
+ The unary operator, plus plus, minus minus, works on one, and ternary works on three. So it actually has two symbols to it, the question mark and the colon. Now the general format of using this is that you have a condition. You're asking something. Then you say what happens if this is true and what happens if this is false. You can actually think of it as a mini if/else statement.
+
+      condition ? true : false;
