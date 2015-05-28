@@ -59,11 +59,44 @@ while(max==="" || isNaN(max) || (Number(max)<Number(min))){
     }
 }
 
+//function call - which is the name of the function();
+//think of it as the go button
+//arguments go inside of function call
+
+//we need a variable to catch the returned value
+var results=randomizr(min, max);
+
+//create a function to calculate the random number
+/*
+function functionName(parameters){
+    code to run everytime the function is called
+}
+ */
+
+//Make function flexible by using arguments and parameters
+//send information into a function and catches it there
+//functions are like Vegas - whatever is inside the function stays inside the function
+
+function randomizr(minNum, maxNum){
+    //find a random number
+    //Math.random() - gives a random number between 0 and 1
+    //Math.round(variable) -basic rounding. .5+ goes up otherwise it goes down
+    var randomNumber = Math.random(Math.random() * (maxNum-minNum) + Number(minNum));
+    //console.log(randomNumber);
+    //return the value to our main code
+    return randomNumber;
+}
+
+//create for lopp to get 15 random numbers
+for(var i=0; 1<15; i++){
+    console.log(randomizr(min,max));
+}
+
 
 //find a random number
 //Math.random() - gives a random number between 0 and 1
 //Math.round(variable) -basic rounding. .5+ goes up otherwise it goes down
-var randomNumber = Math.random() * (max-min) + Number(min);
-console.log(randomNumber);
+//var randomNumber = Math.random(Math.random() * (max-min) + Number(min);
+//console.log(randomNumber);
 
 
