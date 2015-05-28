@@ -99,4 +99,22 @@ for(var i=0; 1<15; i++){
 //var randomNumber = Math.random(Math.random() * (max-min) + Number(min);
 //console.log(randomNumber);
 
+//ask the user for yes or no question
 
+var yesOrNo= prompt("Please type in yes or no");
+
+//converts text string to all lower case
+yesOrNo = yesOrNo.toLowerCase();
+
+while(yesOrNo!="yes" && yesOrNo !="no"){
+    yesOrNo=prompt("Please only type in yes or no");
+    //converts text string to all lower case
+    yesOrNo = yesOrNo.toLowerCase();
+}
+
+//Test Values
+/* Tested validation with blank and text string. It re-prompted.
+Min - 5
+Max - 10
+code gave me a 9, which is correct
+ */
