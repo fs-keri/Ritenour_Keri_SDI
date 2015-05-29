@@ -61,14 +61,14 @@ while(inchHeight==="" || isNaN(inchHeight)){
 var bmiResults = (weight, feetHeight, inchHeight);
 
 //create a function to calculate the results
-function calcBMI(bWeight, feet, inches){
+function calcBMI(bWeight, inches, inchTotal, total){
     var bWeight = weight * .045;
-    var feet = feetHeight * 12;
-    var inches = (inchHeight * feet) * .025;
+    //var feet = feetHeight * 12;
+    var inches = (((feetHeight*12)) + inchHeight * .025);
     var inchTotal = inches * inches;
     var total = bWeight / inchTotal;
-    result = total;
+    return total;
 }
 
-calcBMI(weight, feetHeight, inchHeight);
-alert(result);
+calcBMI();
+console.log("Your BMI is " +calcBMI(bWeight, inches, inchTotal, total)+ ".");
