@@ -29,6 +29,7 @@ while(weight==="" || isNaN(weight)){
         min=prompt("Please only use numbers. \nEnter your weight.");
     }
 }
+console.log(weight);
 
 
 //prompt the user to enter their height in feet
@@ -43,6 +44,7 @@ while(feetHeight==="" || isNaN(feetHeight)){
         feetHeight=prompt("Please only use numbers. \nEnter your height in feet.");
     }
 }
+console.log(feetHeight);
 
 //prompt the user to enter their inches in height
 var inchHeight = prompt("Are there any inches associated with your height?");
@@ -56,6 +58,8 @@ while(inchHeight==="" || isNaN(inchHeight)){
         inchHeight=prompt("Please only use numbers. \nEnter the inches associated with your height. \nIf 0, then enter 0.");
     }
 }
+console.log(inchHeight);
+
 
 //prompt the user for their age
 var age = prompt("Please enter your age");
@@ -68,21 +72,31 @@ while(age==="" || isNaN(age)){
     }else if(isNaN(age)){
         age=prompt("Please only use numbers. \nEnter your age.");
     }else if (age<=15){
-        age=prompt("Your BMI cannot be calculated due to your age")
+        age=prompt("Your BMI cannot be calculated due to your age");
     }
 }
+console.log(age);
 
 
 //create a function to calculate the results
-function calcBMI(bWeight, bfeet, binches){
+function calcBmi(bWeight, bfeet, binches, bmiTot){
     var bWeight = weight * .045;
     var binches = (((feetHeight*12)) + inchHeight * .025);
     var bfeet = binches * binches;
-    var bmiTot = bWeight / binches
+    var bmiTot = bWeight / binches;
     return totalBmi;
 }
 
-calcBMI(totalBmi);
+calcBmi(bWeight, bfeet, binches, bmiTot);
 
 
+//Print final output to user
+console.log("Your BMI is "+(calcBmi())+ ".");
+
+
+/*Final Testing
+Well it was working, but for some reason it is not working now.
+
+Extremely frustrated as this has taken me longer than 6 hours.
+ */
 
