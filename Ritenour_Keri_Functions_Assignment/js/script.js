@@ -57,4 +57,18 @@ while(inchHeight==="" || isNaN(inchHeight)){
     }
 }
 
-//
+//create a variable to store the results
+var bmiResults = (weight, feetHeight, inchHeight);
+
+//create a function to calculate the results
+function calcBMI(bWeight, feet, inches){
+    var bWeight = weight * .045;
+    var feet = feetHeight * 12;
+    var inches = (inchHeight * feet) * .025;
+    var inchTotal = inches * inches;
+    var total = bWeight / inchTotal;
+    result = total;
+}
+
+calcBMI(weight, feetHeight, inchHeight);
+alert(result);
