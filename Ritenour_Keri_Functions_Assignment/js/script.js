@@ -67,36 +67,22 @@ while(age==="" || isNaN(age)){
         age=prompt("Please do not leave blank. \nEnter your age in numbers.");
     }else if(isNaN(age)){
         age=prompt("Please only use numbers. \nEnter your age.");
+    }else if (age<=15){
+        age=prompt("Your BMI cannot be calculated due to your age")
     }
 }
 
-//prompt the user for their sex
-var sex=prompt("Please indicate if you are male or female. \nEnter an M for male or an F for female.");
-
-//validate the prompt
-while(sex !="m" && sex !="f"){
-    //re-prompt the user with the same variable name
-    if(sex===""){
-        sex=prompt("Please do not leave blank. \nEnter m for male or f for female.");
-        //convert text string to all lower case
-        sex = sex.toLowerCase();
-    }
-}
 
 //create a function to calculate the results
-function calcBMI(bWeight, inches, inchTotal, bmiTot){
+function calcBMI(bWeight, bfeet, binches){
     var bWeight = weight * .045;
-    //var feet = feetHeight * 12;
-    var inches = (((feetHeight*12)) + inchHeight * .025);
-    var inchTotal = inches * inches;
-    var bmiTot;
-    bmiTot = bWeight / inchTotal;
-    return bmiTot;
+    var binches = (((feetHeight*12)) + inchHeight * .025);
+    var bfeet = binches * binches;
+    var bmiTot = bWeight / binches
+    return totalBmi;
 }
 
-calcBMI();
-//create a variable to store the results
-//var bmiResults = calcBMI(bWeight, inches, inchTotal, bmiTot);
+calcBMI(totalBmi);
 
 
 
