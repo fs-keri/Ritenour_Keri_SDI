@@ -57,18 +57,46 @@ while(inchHeight==="" || isNaN(inchHeight)){
     }
 }
 
-//create a variable to store the results
-var bmiResults = (weight, feetHeight, inchHeight);
+//prompt the user for their age
+var age = prompt("Please enter your age");
+
+//validate the prompt
+while(age==="" || isNaN(age)){
+    //re-prompt the user with the same variable name
+    if(age===""){
+        age=prompt("Please do not leave blank. \nEnter your age in numbers.");
+    }else if(isNaN(age)){
+        age=prompt("Please only use numbers. \nEnter your age.");
+    }
+}
+
+//prompt the user for their sex
+var sex=prompt("Please indicate if you are male or female. \nEnter an M for male or an F for female.");
+
+//validate the prompt
+while(sex !="m" && sex !="f"){
+    //re-prompt the user with the same variable name
+    if(sex===""){
+        sex=prompt("Please do not leave blank. \nEnter m for male or f for female.");
+        //convert text string to all lower case
+        sex = sex.toLowerCase();
+    }
+}
 
 //create a function to calculate the results
-function calcBMI(bWeight, inches, inchTotal, total){
+function calcBMI(bWeight, inches, inchTotal, bmiTot){
     var bWeight = weight * .045;
     //var feet = feetHeight * 12;
     var inches = (((feetHeight*12)) + inchHeight * .025);
     var inchTotal = inches * inches;
-    var total = bWeight / inchTotal;
-    return total;
+    var bmiTot;
+    bmiTot = bWeight / inchTotal;
+    return bmiTot;
 }
 
 calcBMI();
-console.log("Your BMI is " +calcBMI(bWeight, inches, inchTotal, total)+ ".");
+//create a variable to store the results
+//var bmiResults = calcBMI(bWeight, inches, inchTotal, bmiTot);
+
+
+
