@@ -60,3 +60,101 @@ console.log("The price of the vehicle is $"+(vehPrice)+ " and the interest rate 
  I typed in 30000 for vehPrice, 8 for interestRate and 36 for monthsFinanced.
  It gave me a total of $2700 and a monthly payment of $75.
  */
+
+/*
+ Conditionals Rubric
+
+
+ Calculation:(5/5)
+
+ Some type of math is used an a calculation and includes at least 2 factors as variables, not hard-coded values.
+
+
+ Conditional:(7/15)
+
+ Only 1 Conditional Statement is present in code that is not a part of the validation.
+
+
+ User Prompts:(10/10)
+
+ 3 user prompts are correctly used in the code.
+
+
+ Comments:(10/10)
+
+ Each line has meaningful comments
+
+
+ Else If:(0/5)
+
+ No Else If Statement is present.
+
+
+ Logical Operators:(5/5)
+
+ At least 1 Logical Operator is present in code and works correctly.
+
+
+ Ternary Statement:(2/5)
+
+ Ternary Statement is present, but is not used properly.
+
+
+ Validation:(5/10)
+
+ All 3 prompted values are checked to make sure they look okay, but the validation is not correct. You have isNaN, but it should be isNaN(variable name) this is one of the reasons that you are getting errors.
+
+
+ Test Values:(0/5)
+
+ Test values are present but they are not correct. Also, I typed in the same values and do not get your answers.
+
+
+ GitHub Delivery:(10/10)
+
+ Files are on github with correct number of commits
+
+
+ Files:(10/10)
+
+ File structure is correct and labeled with name/date
+
+
+ Completeness:(2/5)
+
+ Missing one or two required elements
+
+
+ Investment:(5/5)
+
+ Well thought out presentation
+
+
+ Total:(671/100)
+
+ Please see comments above for ways to improve your code.
+
+ Below are some of your errors.
+
+ This else statement is redeclaring the variable vehPrice, you do not need this.
+
+ else {
+ var vehPrice;
+ }
+ This is how validation should look: Notice the || instead of && and also the proper form for isNaN()
+
+ if (interestRate==="" || isNaN(interestRate)){
+ interestRate=prompt("Please do not leave blank and enter the interest rate");
+ }
+ In this conditional, you are testing a variable monthsFinanced before ever even creating it. I think you meant to use the monthsPrompt variable instead.
+
+ if(monthsFinanced < 24){
+ monthsFinanced=prompt("We only give loans for longer than 24 months. Please enter an amount greater than 24 months");
+ }else{
+ var monthsFinanced = monthsPrompt;
+ }
+ In your ternary you are prompting for a value but not storing it anywhere.  You should either use an alert or a console.log. Prompts are only for getting values from the user.
+
+ ((vehPrice * interestRate) > 10000) ? prompt("Select enter to proceed.") : prompt("You are ineligible loan.");
+
+ */

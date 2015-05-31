@@ -100,3 +100,74 @@ Well it was working, but for some reason it is not working now.
 Extremely frustrated as this has taken me longer than 6 hours.
  */
 
+/*
+ Functions Rubric
+
+
+ Functions:(3/10)
+
+ Only 1 functions is present in your code.
+
+
+ Arguments & Parameters:(5/15)
+
+ Only 1 function uses arguments and parameters. However they are used incorrectly. The parameters bWeight, bFeet, etc should be used in place of the main code variables wight, feetHeight, etc..
+
+
+ Return Value:(3/10)
+
+ Only 1 functions uses a return value but it is not being "caught". You need to have something like var results =calcBmi(bWeight, bfeet, binches, bmiTot);
+
+
+ Prompt Validation:(5/5)
+
+ At least 3 user prompts in code that are all correctly validated.
+
+
+ Anonymous Function:(0/15)
+
+ A anonymous function is not used in any example or does not function properly
+
+
+ 3 Parameters In A Function:(5/5)
+
+ At least one of the examples contains a function that has 3 parameters.
+
+
+ Main Code:(0/5)
+
+ Main code variables are used inside of functions.
+
+
+ Test Values:(0/5)
+
+ No test values are present.
+
+
+ GitHub Delivery:(10/10)
+
+ Files are on github with correct number of commits
+
+
+ Files:(10/10)
+
+ File structure is correct and labeled with name/date
+
+
+ Completeness:(2/5)
+
+ Missing one or two required elements
+
+
+ Investment:(5/5)
+
+ Well thought out presentation
+
+
+ Total:(48/100)
+
+ Please see comments above for ways to improve your code.
+
+
+ */
+
