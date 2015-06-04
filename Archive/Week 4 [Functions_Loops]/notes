@@ -1,0 +1,94 @@
+4 Types of code:
+    1- Sequential - lines by line; in order (expressions)
+    2- Conditional - allows code to let computer run based on certain situations (if statement, ternaries)
+    3- Reusable - allows us to have code that is written once, but able to be used again and again by the machine (functions)
+        - DRY - Don't Repeat Yourself
+
+
+Functions are for storage
+    A variable stores values
+    Functions store blocks of code
+
+  Functions are best though of as little factories, designed to do a task (stuff goes in, stuff can come out)
+
+  Ways to think about functions:
+    -references to another receipe you might use many times
+    -instead of printing the same recipe in many pages of a recipe book, you reference the frosting on a different page number
+    -In games, functions allow you to have code in one place and run that code as many times as you want
+
+Functions - blocks of code that run processes for you.
+
+Different types of functions:
+    -Functions - a.k.a "Normal Function"
+    -Procedures
+    -Anonymous Functions
+
+
+Basic Structure
+    function functionName(){
+        //code the function runs
+    }
+        *curly braces are for blocks of code to be executed
+        *parentheses are for parameters or can be empty
+
+        Instead of "if" we are going to use the keyword "function"
+
+        Functions have names so we can refer to them later
+
+        Setting up a function isn't actually enough to make the code run, the function has to be called
+        or invoked.
+
+The basic functions are Arguments and the storage area is called Parameters
+    Parameters allow us to store and use different basic material as we need them
+    Many Arguments can fit a certain parameter
+
+    Not all functions have to have parameters or arguments, they can just have that code
+    block
+
+    Example:
+        funcName(argument1, argument2) //this is the function call
+
+        function funcName(parameter1, parameter2){
+            //code the function runs
+        } //this is the function definition
+
+
+Many programmers and developers will use the terms arguments and parameters interchangeably, but they are not the same
+One is the information being passed in (Arguments - they are always in the function call)
+One is the storage container for that information (Parameters- always in the function definition)
+
+The returned values are the things going out of the function
+
+Procedures vs Functions
+    -they are both functions, but the difference here is that:
+        -functions return values and procedures don't.
+
+
+Anonymous Functions
+    -also called closures
+    -are functions created as the code is run
+    -example
+        var functionName = function(){
+            //code the function runs
+        }
+        functionName(); //function call
+
+
+    *Downside to anonymous functions is that they have to be declared before they are called
+
+
+Which one should you use?
+    Anonymous functions are used for the sake of code brevity. We can limit them to
+    certain parts of the code and better scope.
+    At this point it is more of a style choice
+
+
+LOOPS
+  -loops save us time
+
+  While Loops
+  Do While Loops
+  For Loops
+
+  Break; jumps out of the loop; this is a manual way to get out of the loop
+  Continue; means jump back up and check the condition again (moves us back up to the top)

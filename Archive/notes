@@ -1,0 +1,250 @@
+ A VARIABLE is a container. It's us grabbing a little piece of computer memory and giving it a name,
+ so we can use it while our JavaScript is running. We create it, we name it, we put a value in it,
+ and then we change the value as we need to.
+
+ You use the word var, all written in lowercase, which is part of the JavaScript language, and then the word you want. The name of the variable itself is up to us, and it should represent the piece of data that we want to hold, in this case year, but it could be customerEmail, or todaysDate
+
+   var year;
+   var age;
+
+
+ So what we're doing with this line of code is we're just carving out a little area of memory to hold a value. And right now after this line var year runs, this variable exists. And right now after this line var year runs, this variable exists.
+ It has a name, year, but it doesn't have a value. It's regarded as undefined, and undefined has a special meaning in JavaScript. Now there is no real point in having a variable that stays undefined, so we can define, or set, the initial value of the variable when we create it. We could do that as two statements: first, var year to make the variable and then year = 2011 to set it. Now the equal sign here is setting the variable to the value 2011. It is an instruction.
+
+ Now, more typically if you're doing this, you just combine these into one statement, var year = 2011, to both define it and set its value.
+                                                                                                                                                       var year = 2011;
+                                                                                                                                                     if you're creating multiple variables at the same time, instead of spreading them across multiple lines, you can create one JavaScript statement and just separate the names of the variables with commas, and that would give you three variables here.
+
+ var month, day, year;
+                                                                                                                                                     Similarly, if you're creating and initializing them with these initial values, you can separate those with commas as well to both create them and set them.
+
+   var year = 2011;
+   var month = 3;
+   var day = 7;
+
+ can also be written as
+   var year=2011, month=3, day=7;
+
+ So just by running that one line, we get an area of memory allocated for us with the name that we chose.
+
+ you can use either double quotes or you can use single quotes to surround a string of text, but just don't mix them. Don't open with double quotes and close with single quotes. I tend to use double quotes because that's more common in other languages, but you'll see both ways.
+   var month = "March" can also be written as var month = 'March'
+
+ And we can store Boolean values, which is just a value that can either be true or false. Now with these you do not need the quotes around them. JavaScript understands the words true and false written in lowercase.
+   var myValue = true;
+   var yourValue = false;
+
+ The point of making variables is that we're going to use them.
+
+ We're going to manipulate them, ask questions of them, but that all begins by knowing how to make them.
+
+ CONDITIONALS
+ we need to start asking questions, being able to have code that only runs under certain conditions rather than all the time, and we begin this with the classic if statement
+
+   if( condition ){
+      //code goes here
+   }
+
+   We have the word if, and then we have a condition inside parentheses and then if that condition is true, we will execute whatever code is inside    the braces here.
+
+  So in this case, the parentheses are used to mark out whatever our condition is, and the curly braces area used to mark out what we'll do if    that's true, which could be one JavaScript statement, could be a dozen, could be 100. Now whatever the condition is, whatever we are asking,   whatever is in the parentheses here must evaluate as true or false. So if I have a variable called a and I want to see if it's less than 50, I don't care what it is.
+
+   All conditions must boil down to simply true or false. Now, if I have a variable called c and I want to check that it's equal to something, to check equality in JavaScript, as in other C-based languages, I can use the double equals sign. There is no spaces between them. Double equals is considered a single operator. Now heads up, even for the programmers, JavaScript has another way of checking equality, the triple equal sign.
+
+ In a condition, if you're asking if something is equal to something else, you will never use a single equal sign. As we saw with variables, a single equal sign is an assignment. It's a command. It sets a value, not checks a value.
+
+    if( a===20 ){
+          //code goes here
+       }
+
+
+ And if I want to check that a variable is not equal another value, it's the exclamation mark and equal sign, in this case checking that the variable d is not equal to 100.
+
+    if( d != 100 ){
+          //code goes here
+       }
+
+    When you have several statements surrounded by these curly braces, this is what's referred to as a code block, and this is all the curly braces do. They group a section of code together. They don't have any other meaning than that.
+
+ if you wanted something else to happen, you can follow the if with an else statement and in this case have another code block that runs different code. If the first condition is true, we run the code in the first block; otherwise, we run the code in the second block. And you can even nest them inside each other and check a different condition. But don't nest too deep.
+
+      if( d != 100 ){
+                //code goes here
+             }else{
+                //otherwise different code
+             }
+
+
+OPERATORS
+Just about every statement we will write is going to involve an operation, moving data from one place to another, adding, subtracting. Now to perform a lot of these operations we need operators, and that just means the symbols that we are using to manipulate our values. The most obvious are probably the arithmetic operators. We have addition, we have subtraction, an asterisk for multiplication, forward slash for division. Now you typically see these used along with the equal sign, and the equal sign is formally called the assignment operator.
+
+When we hit the statement we are going to execute whatever's on the right of the equal sign and use it to assign of the value to whatever is on the left of the equal sign.
+
+     result = a + b;
+
+
+So for those of you who are new to programming, remember that when you see a single equal sign that's not a polite description; that's a command. We are setting a value. We are assigning. Now you will often see the same variable being used on both sides of the equal sign. In this case, we are just adding 10 to the variable called score and storing the result back in score.
+
+     score = score + 10;
+
+Now adding to a variable or subtracting to a variable happens so often that there is actually a shorthand for this.
+
+     score += 10;
+
+Order of operations: PEMDAS (order of operations: parenthesis, exponents, multiplication, division, addition and subtraction)
+
+     = assignment
+     == equality (can be string or number and will see as equal  var= 5 versus var="5"
+     === strict equality (must be identical, not just equal so var = 5 versus var="5" is not equal)
+
+     && and
+     || or
+
+  if I am just interested in adding 1 to a variable, I can also use another operator, which is ++. If you want to get geeky about this, this is what's called a unary operator, meaning it only needs one thing to act on. Now the plus plus operator, which increments by 1, can be used either after the variable name or before the variable name, so a++ or ++a. And the flip side is true.
+
+  a++
+
+
+ The unary operator, plus plus, minus minus, works on one, and ternary works on three. So it actually has two symbols to it, the question mark and the colon. Now the general format of using this is that you have a condition. You're asking something. Then you say what happens if this is true and what happens if this is false. You can actually think of it as a mini if/else statement.
+
+      condition ? true : false;
+
+
+LOOPS
+    Well, we've seen if statements before, and this is all I have here. If this condition is true in the parentheses, we will execute the code inside the curly braces.
+
+    Now if all I do here is replace the if with the word while, we have a loop. It could be a one line in this code block, there could be 100 lines in this code block; whatever is in the block gets done every time the loop goes around. So we start to run this code. We will create a variable called a, set it equal to 1. We will come down to this while part. I will check the condition, which in this case is a < 10. Yes, that's true. I'll jump into the body of the block, execute any lines of code that are there.
+
+    We will hit the end. We will hit the closing brace, and that will jump as back up to the while statement again, where we will ask the same question, is a < 10? Well, yes it is. It's still 1, in which case we'll continue on processing. What we've done here is create a loop. We have actually created an infinite loop, which isn't all that pleasant. It's a bad thing. This would never end. a is always going to be less than 10 because we never change it. So a very common thing that we need to do in most loops is make sure that whatever we are doing to keep track of the loop is being incremented.
+
+    var a=1;
+
+    while (a < 10){
+        console.log(a);
+        a++;
+    }
+
+ So this time I've got an a++ at the end of the body of the loop. So with the of the iteration in place, we will start to increment a every time we go around the loop, and we will keep on going. And at some point, what's going to happen is a will be incremented to 10. We will come back to the while. This will evaluate as false, and then what we'll just do is we will jump out of the loop. We will jump right to the end, and we will continue processing whatever code happens afterwards. Now there is a variant of the while loop called the do while loop.
+
+
+ var a=1;
+
+ do {
+    console.log(a);
+    a++;
+ }while (a < 10);
+
+Now there is a variant of the while loop called the do while loop.
+
+What this does is keeps the same basic format, but we actually move the condition to the end. So instead of while a is less than 10 being at the start of the block, it's actually at the end of the block, and because of that, we actually need a semicolon at the end of the do while. Now the big difference with this is if you have a do while, the block will always be executed, at least once, even if we started off by setting the variable a equal to 100. And our condition here is asking while a is less than 10, we are going to execute the do block once before we even check the condition.
+
+So it will happen at least once. To let you know, while loops are much more common than these do while loop, and the code I have written over the years I guess that I write at least 100 whiles for every do. In most loops it's expected to check the condition before entering the loop, and it's more readable that way too. Now in many loops a pattern emerges. If I look at a while loop here, I could have a lot of stuff going on in this loop, but I always have to have several pieces in place, regardless of what I am doing.
+
+
+regardless of what we're doing, we need these three pieces in place.
+
+Set up the index, check the condition, increment the index, and this is so common that there is even a shorthand way of doing this, a thing that brings all these together, the for loop. With this, you actually bring those of three pieces together inside the parentheses. They are all there at the top. So regardless of what's in your loop, again it doesn't really matter. Whatever is between the braces will be executed, whether it's simple or complex, but the loop itself has three pieces.
+
+for (var i = 1; i < 10; i++){
+    //do stuff
+    //do stuff
+    //do stuff
+    //etc...
+}
+
+Break is a word that will jump us out of the loop. So let's say we start running our code and we hit this loop.
+
+break;
+
+
+FUNCTIONS
+As we start to add more code, we want to make sure that it doesn't get messy and hard to read, so as with all languages, we are going to break apart large amounts of JavaScript into smaller reusable modular pieces. All we are doing is taking several statements, wrapping them up, and giving them a name, and that means we are creating functions. In other languages, these might be called modules or subroutines, but in JavaScript it's functions. To make one, we take the code that we want to enclose-- this could be one line, it could be a hundred lines-- we surround it with curly braces to create a code block to say where this function starts and ends.
+
+    calculateArea - get window height
+                    get window width
+                    calculate area
+                    store area
+
+    createMessage - do calculation
+                    check value
+                    output message
+
+    animateImage -  get image position
+                    calculate new value
+                    set image position
+                    change text color
+                    if position correct
+                      output message
+
+
+
+    function createMessage(){
+         console.log("We are in a function.");
+    }
+
+
+    after the name of the function we need to have opening and closing parentheses.
+
+    These say whether this function expects to have data passed into it, and in this case empty parentheses means no, it doesn't. Now after the function is declared, then we can call it. Sometime in our code we can use the name of the function with the opening and closing parentheses, semicolon--because it is a full statement--and all the code in the function will be executed. We could do it again. We could do it again. Now, note that as soon as you put your code in a function, it won't execute.
+
+   function myFunction(){
+            console.log("We are in a function.");
+            //loops, if statements, any thing
+            //...
+       }
+
+    //sometime later
+    myFunction();
+    myFunction();
+
+    It won't run unless you explicitly call it. Now as you start to write files of JavaScript, you'll end up having a lot of functions, and it doesn't officially matter where you put them in your file, because the JavaScript engine will first do a quick scan of your code and figure out what functions exist before it tries to run anything. But it's a best practice to define your functions before you call them. So in this case, for example, I have got the first line of code saying myFunction, but myFunction isn't declared till afterwards, which then calls myOtherFunction, which itself isn't declared till after that.
+
+It's a better practice to rearrange them so that functions are defined and declared before you use them. You don't have to, but it makes for more readable code. Typically, that just means you are going to define all your functions up at the top of your JavaScript file. It's very common to create functions that expect parameters, they expect to be passed information. Now to do this, we take our parentheses and we put our parameters in there. We say how many pieces of information are going to be passed and what do I want to call them? We don't need the word var.
+
+I am just saying here I expect to be passed one piece of information and I am going to call it x. So in the code inside myFunction, I will have this variable called x that I can play around with. Or if I want two, three, four, parameters, I just separate them with commas. You call them whatever you want. It's the same rules as variable naming. So defining a function that takes X,Y means that inside the code I can just treat X and Y as if they exist, in this case making a new variable from them.
+
+
+Whatever is passed in I will multiply together, and then I will log out the result. And then again later in the code I can call this function. First off, I am passing in two number. Then I can call it again, pass in a couple of different numbers, and so on. Now if the format looks familiar, that's because we're using this when we use that alert, or we when we use console.log. Alert is a built-in function in JavaScript. It takes a long piece of information; in this case, we are passing in a string.
+
+And we can optionally return values. Not only can the function accept information, but we can also send some back, and you can do one or the other, or both, or neither. If I want to return the information, all I use is the word return and then pass back a variable, or a literal, like a string literal in double quotes, or a number--it's up to you. Those of you who come from other programming languages might think, "Well, surely the function has to be defined differently if we return a value," and in JavaScript, no it doesn't. This is all we do.
+
+function myFunction( x, y ){
+            var myVar = x * y;
+            console.log(myVar);
+            //we can return a value
+            return myVar
+       }
+
+
+myFunction(754, 346);
+myFunction(123, -732);
+alert("Hello World");
+
+
+You don't have to return anything from a function. It's up to you. Now what this format means is that later on I could use this function to create a result. And in fact in the last line here, I am creating a new variable and setting it equal to whatever is returned from passing in the numbers 6 and 9 into my function. Now if a function does return a value and you don't do anything with it, you are just calling the function. That will just be ignored. Now one of the usual issues with functions that take parameters is what happens if you get something wrong with them? What happens if you pass the wrong amount of information in there? Let's say we have a function defined called calculateLoan.
+
+function myFunction( x, y ){
+            var myVar = x * y;
+            console.log(myVar);
+            //we can return a value
+            return myVar
+       }
+
+
+myFunction(754, 346);
+myFunction(123, -732);
+alert("Hello World");
+
+var myResult = myFunction(6,9);
+
+This takes four parameters--amount, months, interest, and name--and it presumably does something with them inside the body of the code. The way that we should call it is just by passing those four parameters in order, and inside our function, when it runs, we will have amount equal to 10,000, months equal to 60, interest equal to 7, and name equal to Sam Jones. Now if I call myFunction and I pass in an extra parameter here, in a lot of other programming languages this would break your code; in JavaScript it will just ignore it.
+
+That extra one we drop off the end. We are effectively just running the function just fine. And the flip side of that, what happens if I pass in too few parameters? What will happen is that the missing one will be passed as undefined. interest and name in this case will be undefined variables. Now your function code might be able to deal with that, and it might not. So it doesn't necessarily mean it will work, but this is what will happen. And one last thing, we are going to talk about something called variable scope here.
+
+Now, scope of a variable simply means where is this variable visible? What part of your code can see it, what part of your code can use it? So, I have got a function declared here called simpleFunction. It has got some code in it, and then we have a line that declares a variable foo=500. We then have console.log foo and if we call this variable, it's going to output 500 to the console. But let's say right after I call this variable, I then write another line of code that says console.log(foo), and then I run console.log(foo), trying to write out the contents of that foo variable.
+
+I know this function has already run, so surely I can write it out. But no, what I get here is the message undefined because outside the function, as far as JavaScript is concerned, foo doesn't exist. That's because when we use the word var inside a function definition, this creates a variable that's known as a local variable. It only exists and is only relevant inside the function itself. If I needed to have a variable that was visible throughout my entire file of code, what I'd do is I would declare foo outside the function.
+
+This now becomes what's called a global variable if it's declared at the absolute top level and outside any function that you have. Then what I need to do inside the function is I don't need to define it again, so I am not using a word var. foo can be set to 500. We can write it out inside the function, and we can write it out outside the function. Now, usually when you're declaring variables inside a function, you only want to access them inside the functions, so using var is absolutely fine, but just be aware that you have this concept of local variables with functions. And for those of you coming from other languages with variable scope, know that this is only relevant with JavaScript inside functions.
+
+This doesn't apply to other code blocks like loops and if statements and so on. It's a very simple split. You use var inside the function, it only exits inside the function; otherwise, it's available everywhere.
