@@ -4,3 +4,5 @@
  * Section 02
  * Associating JS
  */
+
+alert("This is in the js file");
