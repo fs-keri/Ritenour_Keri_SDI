@@ -31,9 +31,8 @@ a -=4;
 console.log(a);
 
 //increment operator
-
-a ++;
+a ++; //adds 1
 console.log(a);
 
-a --;
+a --; //subtracts 1
 console.log(a);
