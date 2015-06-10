@@ -25,3 +25,10 @@
  Result to Print:
     “You have spent a total of $X on groceries over 5 weeks. That is an average of $X per week”
  */
+
+//create variable for weekly totals
+var weeklyTotals = [124.33, 275.21, 164.78, 224.39, 144.58];
+
+var totalAmount = weeklyTotals[0] + weeklyTotals[1] + weeklyTotals[2] + weeklyTotals[3] + weeklyTotals[4];
+var averageSpent = totalAmount / 5;
+
