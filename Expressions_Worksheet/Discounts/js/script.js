@@ -24,3 +24,9 @@
  Result to Print:
     “Your X was originally $X, but after a X% discount, it is now $X without tax, and $X with tax.”
  */
+
+var itemPrice = 275;
+var percentOff = 20;
+var itemDescription = "laptop bag";
+var salesTax = 6;
+
