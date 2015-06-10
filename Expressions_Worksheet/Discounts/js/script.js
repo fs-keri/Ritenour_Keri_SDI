@@ -25,8 +25,24 @@
     “Your X was originally $X, but after a X% discount, it is now $X without tax, and $X with tax.”
  */
 
+//created variable for given items
 var itemPrice = 275;
-var percentOff = 20;
+var percentAmount = 20;
 var itemDescription = "laptop bag";
 var salesTax = 6;
+
+//calculate percentage discount
+var percentOff = 20 / 100; //must divide by 100 to get the percentage
+
+//calculate percentage sales tax
+var salesTax = 6 / 100; //must divide by 100 to get the percentage
+
+//calculate the itemPrice minus the discount
+var itemAfterDiscount = itemPrice - (itemPrice * percentOff);
+
+//calculate the item with the discount
+var withTax = (itemAfterDiscount * salesTax) + itemAfterDiscount;
+
+//print to console
+console.log("Your " +itemDescription+ " was originally $" +itemPrice+ ", but after a " +percentAmount+ "% discount, it is now $" +itemAfterDiscount+ " without tax, and $" +withTax+ " with tax");
 
