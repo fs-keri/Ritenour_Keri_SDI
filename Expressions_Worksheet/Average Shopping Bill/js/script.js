@@ -29,6 +29,12 @@
 //create variable for weekly totals
 var weeklyTotals = [124.33, 275.21, 164.78, 224.39, 144.58];
 
+//calculate the total of the array by adding them together
 var totalAmount = weeklyTotals[0] + weeklyTotals[1] + weeklyTotals[2] + weeklyTotals[3] + weeklyTotals[4];
+
+//calculate the average amount spent by dividing the totalAmount by the number of totals, which is 5
 var averageSpent = totalAmount / 5;
+
+//print to console
+console.log("You have spent a total of $" +totalAmount+ " on groceries over 5 weeks. That is an average of $" +averageSpent+ " per week.");
 
