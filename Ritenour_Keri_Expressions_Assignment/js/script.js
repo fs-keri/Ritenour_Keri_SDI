@@ -29,7 +29,8 @@ var shipOptions = [10.50, 35, 75];
 var userShipSelection = prompt("Please select a shipping option number: \n0 for Regular Delivery \n1 for 2-Day Delivery \n2 for Overnight Delivery");
 console.log(userShipSelection);
 
-alert("You have selected the " +bagStyle[Number(userStyleSelection)]+ " at a state sales tax rate of " +stateRate+ "% and the " +userShipSelection +".");
+alert("You have selected the $" +bagStyle[Number(userStyleSelection)]+ " at a state sales tax rate of " +stateRate+ "% and the " +userShipSelection +" .");
+
 
 
 
