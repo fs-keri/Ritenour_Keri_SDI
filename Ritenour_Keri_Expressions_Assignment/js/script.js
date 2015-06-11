@@ -6,3 +6,7 @@
  */
 
 //alert("Testing to see if connected");
+
+alert("Welcome to LAPBAGS Online Ordering! \nTo place an order select OK.");
+
+
