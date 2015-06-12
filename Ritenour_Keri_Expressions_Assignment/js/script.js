@@ -21,15 +21,21 @@ console.log(userStyleSelection);
 var stateRate = prompt("Please enter the sales tax for the State in which you reside");
 
 //divide user input by 100 to get the sales tax percentage;
-stateRate /= 100;
 console.log(stateRate);
+stateRate /= 100;
 
 //create array to hold the options for shipping prices
 var shipOptions = [10.50, 35, 75];
 var userShipSelection = prompt("Please select a shipping option number: \n0 for Regular Delivery \n1 for 2-Day Delivery \n2 for Overnight Delivery");
 console.log(userShipSelection);
 
-alert("You have selected the $" +bagStyle[Number(userStyleSelection)]+ " at a state sales tax rate of " +stateRate+ "% and the " +userShipSelection +" .");
+//calculate the package total with tax and shipping
+var totalTax = (bagStyle[parseInt(userStyleSelection)] * stateRate);
+console.log(totalTax);
+
+
+
+//alert("You have selected the $" +bagStyle[Number(userStyleSelection)]+ " at a state sales tax rate of " +stateRate+ "% and the " +userShipSelection +" .");
 
 
 
