@@ -21,26 +21,26 @@ console.log(stateRate);
 
 //create array to hold the options for shipping prices
 var shipOptions = [10.50, 35, 75];
-var userShipSelection = prompt("Please select a shipping option number: \n0 for Regular Delivery \n1 for 2-Day Delivery \n2 for Overnight Delivery");
+var userShipSelection = prompt("Please select a shipping option number: \n0 Regular Delivery $10.50 \n1 Two-Day Delivery $35.00 \n2 Overnight Delivery $75.00");
 console.log(userShipSelection);
 
 //calculate tax in percentage
-var stateTax = stateRate / 100;
-console.log(stateTax);
+stateRate /= 100;
 
 //calculate the total by adding the bag style price and shipping price
 var cartTotal = (bagStyle[Number(userStyleSelection)] + shipOptions[Number(userShipSelection)]);
 console.log(cartTotal);
 
 //calculate the total tax by multiplying the total of the cart by the state sales tax rate
-var totalTax = cartTotal * stateTax;
+var totalTax = cartTotal * stateRate;
 console.log(totalTax);
 
 //calculate the total amount due by adding the cart total and the total tax
 var amountDue = cartTotal + totalTax;
 console.log(amountDue);
 
-alert("The cost of your bag is $" +bagStyle[Number(userStyleSelection)] +". \nThe State sales tax is " +stateRate+ "% and the shipping cost is $" +shipOptions[Number(userShipSelection)] +". \nThe total amount due is $" +amountDue+ ". \n\nThank you for shopping with LAPBAGS!");
+//alert the user of the bag cost, sales tax, shipping and total amount due.
+alert("The cost of your bag is $" +bagStyle[Number(userStyleSelection)] +". \nThe State sales tax is " +(stateRate *100)+ "% and the shipping cost is $" +shipOptions[Number(userShipSelection)] +". \nThe total amount due is $" +amountDue+ ". \n\nThank you for shopping with LAPBAGS!");
 
 
 /*Final Testing
