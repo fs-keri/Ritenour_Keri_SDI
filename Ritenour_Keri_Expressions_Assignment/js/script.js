@@ -40,10 +40,16 @@ console.log(totalTax);
 var amountDue = cartTotal + totalTax;
 console.log(amountDue);
 
-//alert("You have selected the $" +bagStyle[Number(userStyleSelection)]+ " at a state sales tax rate of " +stateRate+ "% and the " +userShipSelection +" .");
+alert("The cost of your bag is $" +bagStyle[Number(userStyleSelection)] +". \nThe State sales tax is " +stateRate+ "% and the shipping cost is $" +shipOptions[Number(userShipSelection)] +". \nThe total amount due is $" +amountDue+ ". \n\nThank you for shopping with LAPBAGS!");
 
 
+/*Final Testing
+ I typed in 2 for bagStyle, 6 for stateRate and 2 for shipOptions.
+ It gave me a total of $291.50.
 
+ I typed in 1 for bagStyle, 5 for stateRate and 1 for shipOptions.
+ It gave me a total of $220.50.
 
-
-
+ I typed in 4 for bagStyle, 7.5 for stateRate and 0 for shipOptions.
+ It gave me a total of $280.0375.
+ */
