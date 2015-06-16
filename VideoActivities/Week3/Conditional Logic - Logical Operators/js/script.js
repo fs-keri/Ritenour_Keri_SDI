@@ -22,3 +22,13 @@
 //Logical operators are only put between boolean variables or between comparisons
   //something that is already being used with relational expressions
 
+//if the price of the phone is less our budget AND if your paycheck is over 300
+var budget = 300;
+var iPhonePrice = 199.99;
+var paycheck = 200;
+
+if(iPhonePrice < budget && paycheck > 300){ //&& requires both are true
+   console.log("We can buy the phone!")
+}else{
+    console.log("No phone for you!")
+}
