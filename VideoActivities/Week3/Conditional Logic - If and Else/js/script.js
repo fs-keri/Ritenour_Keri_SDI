@@ -7,6 +7,8 @@
 
 //alert("Testing to see if connected");
 
+//If and Else allow the machine to choose between 2 blocks of code
+
 var kidHeight = 44;
 var minHeight = 48;
 
