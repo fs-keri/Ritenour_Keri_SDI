@@ -18,3 +18,7 @@
     //Use Strict Equality over Equality === is better and faster than ==
 
 //Inequality != "is not the same as"
+
+//Logical operators are only put between boolean variables or between comparisons
+  //something that is already being used with relational expressions
+
