@@ -52,9 +52,32 @@ if(degrees == "F"){
 }
 
 
+//GROUP 2 Multiple Results
 
+//Calculate the grade number of a student and determine the appropriate Letter Grade
+// A+ 95-100
+// A 90-94
+// B+ 85-89
+// B 80-84
+// C+ 76-79
+// C 73-75
+// D 70-72
+// F 0-69
+var asgn1 = Number(prompt("Enter your score on Assignment 1:"));
+var asgn2 = Number(prompt("Enter your score on Assignment 2:"));
+var asgn3 = Number(prompt("Enter your score on Assignment 3:"));
+var asgn4 = Number(prompt("Enter your score on Assignment 4:"));
+var asgn5 = Number(prompt("Enter your score on Assignment 5:"));
+var test1 = Number(prompt("Enter your score on Test 1:"));
+var test2 = Number(prompt("Enter your score on Test 2:"));
+var test3 = Number(prompt("Enter your score for the Midterm:"));
+var test4 = Number(prompt("Enter your score for the Final:"));
+var totalPossible = 900;
 
+var results = Number((((asgn1 + asgn2 + asgn3 + asgn4 + asgn5 + test1 + test2 + test3 + test4) / 9) / totalPossible) * 100);
+console.log(results);
 
+//“You have a X%, which means you have earned a(n) X in the class!”
 
 
 
