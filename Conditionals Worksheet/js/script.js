@@ -36,20 +36,18 @@ if(weight > 250){
 
 //GROUP 1 Expressions with Conditionals
 
-//convert temperature to celsius
+//convert temperature to fahrenheit or celsius
 //create variables
-var temperature = 78;
+var temperature = Number(prompt("What is the temperature?"));
 var degrees = (prompt("Select F to convert to Fahrenheit or C to convert to Celsius:"));
 var degCent;
 
-var degFahren = Number(prompt("Enter the degrees Fahrenheit"));
-
-if(degrees == F){
-    degCent = 5/9 * (degFahren -32);
+//if Fahrenheit is selected perform this calculation
+if(degrees == "F"){
+    degCent =  5/9 * (temperature + 32);
     console.log("It is " +degCent+ "\xB0 Fahrenheit");
-}
-if(degrees == C){
-
+}else{//if Celsius is selected perform this calculation
+    degCent = (temperature - 32) * 5/9;
     console.log("It is " +degCent+ "\xB0 Celsius");
 }
 
