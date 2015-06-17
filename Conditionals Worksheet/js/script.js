@@ -74,7 +74,7 @@ var test3 = Number(prompt("Enter your score for the Midterm:"));
 var test4 = Number(prompt("Enter your score for the Final:"));
 var totalPossible = 900;
 
-var results = Number((((asgn1 + asgn2 + asgn3 + asgn4 + asgn5 + test1 + test2 + test3 + test4) / 9) / totalPossible) * 100);
+var results = Number(((asgn1 + asgn2 + asgn3 + asgn4 + asgn5 + test1 + test2 + test3 + test4)  / totalPossible) * 100);
 console.log(results);
 
 //“You have a X%, which means you have earned a(n) X in the class!”
