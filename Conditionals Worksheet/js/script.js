@@ -100,6 +100,32 @@ if(results >= 95){
 }
 
 
+// GROUP 3 Multiple Conditions
+//determine age and time customer is seeing a movie to determine price and/or discount
+
+//prompt user for age
+var age = Number(prompt("What is your age?"));
+
+//regular ticket prices and discounted prices
+var regTicketPrice = 12.00;
+var disTicketPrice = 7.00;
+var payPrice;
+
+//time of movie
+var movieTime = prompt("What is the current time in hours?");
+
+//conditions for determining price
+if(age >= 55 || age <= 10){
+    payPrice = disTicketPrice;
+    //console.log(payPrice);
+} if(movieTime >= 3 && movieTime <=5){
+    payPrice = disTicketPrice;
+}else{
+    payPrice = regTicketPrice;
+}
+
+alert("The ticket price is $" +payPrice+ ".");
+
 
 
 
