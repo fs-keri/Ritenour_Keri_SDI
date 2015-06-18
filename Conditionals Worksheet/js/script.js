@@ -63,6 +63,8 @@ if(degrees == "F"){
 // C 73-75
 // D 70-72
 // F 0-69
+
+//Student inputs there scores for each assignment or test
 var asgn1 = Number(prompt("Enter your score on Assignment 1:"));
 var asgn2 = Number(prompt("Enter your score on Assignment 2:"));
 var asgn3 = Number(prompt("Enter your score on Assignment 3:"));
@@ -74,10 +76,32 @@ var test3 = Number(prompt("Enter your score for the Midterm:"));
 var test4 = Number(prompt("Enter your score for the Final:"));
 var totalPossible = 900;
 
+//calculate the total points earned divided by the total points possible and multiply by 100 to obtain letter grade
 var results = Number(((asgn1 + asgn2 + asgn3 + asgn4 + asgn5 + test1 + test2 + test3 + test4)  / totalPossible) * 100);
 console.log(results);
 
-//“You have a X%, which means you have earned a(n) X in the class!”
+//define conditions for determining letter grade
+if(results >= 95){
+    alert("You have a " +results+ "%, which means you have earned a(n) A+ in the class!");
+}else if(results >= 90 && results <= 94){
+    alert("You have a " +results+ "%, which means you have earned a(n) A in the class!");
+}else if(results >= 85 && results <= 89){
+    alert("You have a " +results+ "%, which means you have earned a(n) B+ in the class!");
+}else if (results >= 80 && results <= 84){
+    alert("You have a " +results+ "%, which means you have earned a(n) B in the class!");
+}else if(results >= 76 && results <= 79){
+    alert("You have a " +results+ "%, which means you have earned a(n) C+ in the class!");
+}else if(results >= 73 && results <= 75){
+    alert("You have a " +results+ "%, which means you have earned a(n) C in the class!");
+}else if(results >= 70 && results <= 72){
+    alert("You have a " +results+ "%, which means you have earned a(n) D in the class!");
+}else if(results > 0 && results <= 69){
+    alert("You have a " +results+ "%, which means you have earned a(n) F in the class!");
+}
+
+
+
+
 
 
 
