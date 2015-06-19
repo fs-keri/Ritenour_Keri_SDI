@@ -13,6 +13,9 @@ alert("Welcome to 550 Online Ordering! \nThe Home of 5 Hand Bags under $50 \nTo 
 //create variable to store the price of the bag
 var bagPrice = [15.50, 20, 25, 35.50, 49.99];
 
+//create a variable for shipping
+var shipPrice = 12.75;
+
 //prompt user for bag selection
 var userBagSelection = prompt("Enter the product number corresponding to the Hand Bag you would like to purchase: \nProduct 0 Sweet Petite $15.50 \nProduct 1 Little Lucy $20.00 \nProduct 2 Regular Regina $25.00 \nProduct 3 Big Bertha $35.50 \nProduct 4 The Kitchen Sink $49.99");
 
@@ -24,6 +27,11 @@ if(userBagSelection === "" || isNaN(userBagSelection)){
 }
 //store selection
 console.log(userBagSelection);
+
+var quantity = prompt("How many of this style would you like to purchase?");
+console.log(quantity);
+
+
 
 
 
