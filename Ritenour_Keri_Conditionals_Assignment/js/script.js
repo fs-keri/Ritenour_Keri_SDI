@@ -28,8 +28,20 @@ if(userBagSelection === "" || isNaN(userBagSelection)){
 //store selection
 console.log(userBagSelection);
 
-var quantity = prompt("How many of this style would you like to purchase?");
+//prompt user for quantity of bags they would like to purchase
+var quantity = prompt("Enter the number of hand bags in this style would you like to purchase?");
 console.log(quantity);
+
+//create conditional to validate user input
+if(quantity === "" || isNaN(quantity)){
+    quantity = prompt("Only numbers are valid. Please only enter the quantity of the hand bag you would like to purchase:");
+}
+//store quantity
+console.log(quantity);
+
+//calculate the total by multiplying the hand bag price times the quantity desired
+var totalCart = ((bagPrice[Number(userBagSelection)] * quantity) + shipPrice);
+console.log(totalCart);
 
 
 
