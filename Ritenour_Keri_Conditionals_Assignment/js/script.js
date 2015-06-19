@@ -57,6 +57,15 @@ if (totalCart >= 75){
     console.log(totalShip);
 }
 
+//prompt user to see if they would like to join newsletter
+var newsletter = prompt("Would you like to receive our email newsletter?");
 
+//conditional to determine if prompt is true or false and if true, have user input email address
+if (newsletter === "yes"){
+    newsletter = prompt("Please enter your email address:");
+    console.log(newsletter);
+}else{
+    console.log(newsletter);
+}
 
 
