@@ -62,14 +62,39 @@ if (totalCart >= 75){
 
 //prompt user to see if they would like to join newsletter
 var newsletter = prompt("Would you like to receive our email newsletter?");
+console.log(newsletter);
 
 //conditional to determine if prompt is true or false and if true, have user input email address
 if (newsletter === "yes"){
     newsletter = prompt("Please enter your email address:");
     console.log(newsletter);
-}else{
-    console.log(newsletter);
 }
 
 //alert user to the total amount due
-alert("You have selected " +quantity+ " of the $" +bagPrice[Number(userBagSelection)]+ " hand bags. \nYour total amount due is $" +totalShip+ ". \nThank you for shopping at 550 and please visit your site again soon.");
+alert("You have selected " +quantity+ " of the $" +bagPrice[Number(userBagSelection)]+ " hand bags. \nYour total amount due is $" +totalShip+  "\nThank you for shopping at 550!");
+
+/*Final Testing
+ I typed in 2 for product, 6 for quantity and it told me I qualified free shipping. Then I typed in
+ "yes" for newsletter and I typed in my email address.
+ It gave me a total of $150.00.
+
+ I typed in 2 for product, 6 for quantity and it told me I qualified free shipping. Then I typed in
+ "no".
+ It gave me a total of $150.00.
+
+ I typed in 1 for product, 1 for quantity and it told me the shipping cost is $12.75. Then I typed in
+ "yes" for newsletter and I typed in my email address.
+ It gave me a total of $32.75.
+
+ I typed in 1 for product, 4 for quantity and it told me I qualified free shipping. Then I typed in
+ "no".
+ It gave me a total of $80.00.
+
+ I typed in 3 for product, 10 for quantity and it told me I qualified free shipping. Then I typed in
+ "yes" for newsletter and I typed in my email address.
+ It gave me a total of $355.
+
+ I typed in 4 for product, 1 for quantity and it told me the shipping cost is $12.75. Then I typed in
+ "no" for newsletter.
+ It gave me a total of $62.74.
+ */
