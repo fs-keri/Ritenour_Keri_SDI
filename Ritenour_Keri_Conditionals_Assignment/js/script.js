@@ -40,9 +40,22 @@ if(quantity === "" || isNaN(quantity)){
 console.log(quantity);
 
 //calculate the total by multiplying the hand bag price times the quantity desired
-var totalCart = ((bagPrice[Number(userBagSelection)] * quantity) + shipPrice);
+var totalCart = (bagPrice[Number(userBagSelection)] * quantity);
 console.log(totalCart);
 
+//create ternary for shipping discount
+(totalCart >= 75) ? console.log("You qualify for free shipping!") : console.log("Your shipping cost is $" +shipPrice);
+
+//variable to store shipping if not free
+var totalShip;
+
+//conditional to determine if cart qualifies for free or paid shipping
+if (totalCart >= 75){
+    console.log(totalCart);
+}else if (totalCart < 75){
+    totalShip = totalCart + shipPrice;
+    console.log(totalShip);
+}
 
 
 
