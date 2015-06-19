@@ -44,18 +44,21 @@ var totalCart = (bagPrice[Number(userBagSelection)] * quantity);
 console.log(totalCart);
 
 //create ternary for shipping discount
-(totalCart >= 75) ? console.log("You qualify for free shipping!") : console.log("Your shipping cost is $" +shipPrice);
+(totalCart >= 75) ? alert("You qualify for free shipping!") : alert("Your shipping cost is $" +shipPrice);
 
 //variable to store shipping if not free
 var totalShip;
+//var totalDue;
 
 //conditional to determine if cart qualifies for free or paid shipping
 if (totalCart >= 75){
-    console.log(totalCart);
+    totalShip = totalCart;
+    console.log(totalShip);
 }else if (totalCart < 75){
     totalShip = totalCart + shipPrice;
     console.log(totalShip);
 }
+
 
 //prompt user to see if they would like to join newsletter
 var newsletter = prompt("Would you like to receive our email newsletter?");
@@ -68,4 +71,5 @@ if (newsletter === "yes"){
     console.log(newsletter);
 }
 
-
+//alert user to the total amount due
+alert("You have selected " +quantity+ " of the $" +bagPrice[Number(userBagSelection)]+ " hand bags. \nYour total amount due is $" +totalShip+ ". \nThank you for shopping at 550 and please visit your site again soon.");
