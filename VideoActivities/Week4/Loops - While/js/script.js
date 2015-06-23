@@ -2,7 +2,7 @@
  * Keri Ritenour
  * 6/22/15
  * Section 02
- * Week 4 - Loops
+ * Week 4 - Loops - While
  */
 
 //alert("Testing to see if connected");

@@ -26,8 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec676c10-44e2-4bb1-a5bd-187de1f63921" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VideoActivities/Week4/Loops/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VideoActivities/Week4/Loops/js/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VideoActivities/Week4/Loops - Do While/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VideoActivities/Week4/Loops - Do While/js/script.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VideoActivities/Week4/Loops/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/VideoActivities/Week4/Loops/js/script.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ritenour_Keri_SDI.iws" />
@@ -50,17 +52,17 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VideoActivities/Week4/Loops/js/script.js">
+        <entry file="file://$PROJECT_DIR$/VideoActivities/Week4/Loops - Do While/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/VideoActivities/Week4/Loops/index.html">
+        <entry file="file://$PROJECT_DIR$/VideoActivities/Week4/Loops - Do While/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.13157895">
               <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
@@ -85,10 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Functions_worksheet/index.html" />
-        <option value="$PROJECT_DIR$/Functions_worksheet/js/script.js" />
-        <option value="$PROJECT_DIR$/Week 4 [Functions_Loops]/While Loops/index.html" />
-        <option value="$PROJECT_DIR$/Week 4 [Functions_Loops]/While Loops/js/script.js" />
         <option value="$PROJECT_DIR$/Week 4 [Functions_Loops]/Do While Loops/index.html" />
         <option value="$PROJECT_DIR$/Week 4 [Functions_Loops]/Do While Loops/js/script.js" />
         <option value="$PROJECT_DIR$/Week 4 [Functions_Loops]/For Loops/index.html" />
@@ -136,6 +134,10 @@
         <option value="$PROJECT_DIR$/VideoActivities/Week4/Anonymous Functions/js/script.js" />
         <option value="$PROJECT_DIR$/VideoActivities/Week4/Loops/index.html" />
         <option value="$PROJECT_DIR$/VideoActivities/Week4/Loops/js/script.js" />
+        <option value="$PROJECT_DIR$/VideoActivities/Week4/Loops - Do While/index.html" />
+        <option value="$PROJECT_DIR$/VideoActivities/Week4/Loops - While/index.html" />
+        <option value="$PROJECT_DIR$/VideoActivities/Week4/Loops - While/js/script.js" />
+        <option value="$PROJECT_DIR$/VideoActivities/Week4/Loops - Do While/js/script.js" />
       </list>
     </option>
   </component>
@@ -448,20 +450,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Ritenour_Keri_Conditionals_Assignment/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ritenour_Keri_Conditionals_Assignment/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ritenour_Keri_Conditionals_Assignment/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -798,15 +786,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VideoActivities/Week4/Loops/js/script.js">
+    <entry file="file://$PROJECT_DIR$/VideoActivities/Week4/Loops - While/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VideoActivities/Week4/Loops/index.html">
+    <entry file="file://$PROJECT_DIR$/VideoActivities/Week4/Loops - While/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10526316">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VideoActivities/Week4/Loops - Do While/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VideoActivities/Week4/Loops - Do While/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13157895">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
