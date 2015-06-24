@@ -12,8 +12,10 @@
 var width = 5;
 var height = 6;
 var area = calculateArea(width, height);
+//print to console
 console.log("The Area of the Rectangle is " +area);
 
+//function to calculate area by multiplying width times height
 function calculateArea(w,h){
     return w*h;
 }
@@ -24,8 +26,10 @@ function calculateArea(w,h){
 var radius = 10;
 var pi = 3.14;
 var circumference = calculateCircum(radius, pi);
+//print to console
 console.log("The circumference of the Circle is " +circumference);
 
+//function to calculate circumference by multiplying radius times pi
 function calculateCircum(r, p){
     return r*p;
 }
