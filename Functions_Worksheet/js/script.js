@@ -17,3 +17,15 @@ console.log("The Area of the Rectangle is " +area);
 function calculateArea(w,h){
     return w*h;
 }
+
+
+//calculate the circumference of a circle
+//create variables
+var radius = 10;
+var pi = 3.14;
+var circumference = calculateCircum(radius, pi);
+console.log("The circumference of the Circle is " +circumference);
+
+function calculateCircum(r, p){
+    return r*p;
+}
