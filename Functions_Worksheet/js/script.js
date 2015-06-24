@@ -33,3 +33,17 @@ console.log("The circumference of the Circle is " +circumference);
 function calculateCircum(r, p){
     return r*p;
 }
+
+
+//calculate how many bee stings it would take to kill an animal based on weight
+//create variables
+var weight = 320; //weight in pounds
+var stings = 8.666666667;
+var numberStings = calculateStings(weight, stings);
+//print to console
+console.log("It takes " +numberStings+ " bee stings to kill this animal.");
+
+//function to calculate number of stings per pound to kill animal by multiplying weight times stings
+function calculateStings(w,s){
+    return w*s;
+}
