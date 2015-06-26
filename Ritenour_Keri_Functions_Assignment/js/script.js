@@ -38,22 +38,31 @@ function tipTotal(c, p, s){
     return calc;
 }
 
-var sepBill = prompt("Enter the total number of people in your party to calculate separate billing: \nEnter 1 if you are paying for the entire check.");
-//validate user input
-while(sepBill === "" || isNaN(sepBill)){
-    sepBill = prompt("Please do not leave blank and only provide numbers. \nProvide the total number in your party: \nEnter 1 if you are paying for the entire check.");
-}
-
-var dutchCalc = function(t, b){
-    var sepDutchCalc = totalWithTip / sepBill;
-    return sepDutchCalc;
-}
+//function definition to calculate separate billing
+var billCalc = function(){
+    var dutchCalc = totalWithTip / sepBill;
+    return dutchCalc;
+    console.log(dutchCalc);
+};
 
 //print to console
 console.log("The total amount of your check was $" +checkTotal+ ". \nYou would like to leave a " +percentTip+ "% tip. \nYou gave the restaurant a " +serviceRating+ " rating. \nThe total amount with the tip and service rating is $" +totalWithTip+ ".");
 
 //alert to user
-alert("The total amount of your check was $" +checkTotal+ ". \nYou would like to leave a " +percentTip+ "% tip. \nYou gave the restaurant a " +serviceRating+ " rating. \nThe total amount with the tip and service rating is $" +totalWithTip+ ".");
+alert("The total amount of your check was $" +checkTotal+ ". \nYou would like to leave a " +percentTip+ "% tip. \nYou gave the restaurant a " +serviceRating+ " rating. \nThe total amount with the tip and service rating is $" +totalWithTip+ ". \nSelect OK to continue.");
+
+//prompt user for THIS
+var sepBill = prompt("To calculate separate billing, enter the total number of people in your party. \nEnter 1 if you are paying for the entire check.");
+//validate user input
+while(sepBill === "" || isNaN(sepBill)){
+    sepBill = prompt("Please do not leave blank and only provide numbers. \nProvide the total number in your party: \nEnter 1 if you are paying for the entire check.");
+}
+
+//function call
+var billTotal = billCalc();
+console.log(billTotal);
+
+alert("The total amount per person is $" +billTotal.toFixed(2));
 
 
 
