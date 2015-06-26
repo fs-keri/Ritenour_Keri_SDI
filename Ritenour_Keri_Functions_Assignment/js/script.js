@@ -35,4 +35,16 @@ if(serviceRating === "" || isNaN(serviceRating)){
     serviceRating = prompt("Please only use numbers. \nProvide the rating you would give this restaurant? \n1 = Poor \n2 = Fair \n3 = Mediocre \n4 = Good \n5 = Great!");
 }
 
+//function call
+var totalWithTip = tipTotal(checkTotal, percentTip, serviceRating);
 
+//function definition  for calculation
+function tipTotal(c, p, s){
+    var calc = (Number(p / 100) * Number(c)) + Number(c) + Number(s);
+    return calc;
+}
+
+console.log("The total amount of your check was $" +checkTotal+ ". You would like to leave a " +percentTip+ "% tip and you gave the restaurant a " +serviceRating+ " rating. \nThe total amount with the tip and service rating is $" +totalWithTip+ ".");
+
+//alert to user
+alert("The total amount of your check was $" +checkTotal+ ". You would like to leave a " +percentTip+ "% tip and you gave the restaurant a " +serviceRating+ " rating. \nThe total amount with the tip and service rating is $" +totalWithTip+ ".");
