@@ -38,13 +38,13 @@ if(serviceRating === "" || isNaN(serviceRating)){
 //function call
 var totalWithTip = tipTotal(checkTotal, percentTip, serviceRating);
 
-//function definition  for calculation
+//function definition for calculation
 function tipTotal(c, p, s){
-    var calc = (Number(p / 100) * Number(c)) + Number(c) + Number(s);
+    var calc = ((Number(p / 100) * Number(c)) + Number(c) + Number(s));
     return calc;
 }
 
-console.log("The total amount of your check was $" +checkTotal+ ". You would like to leave a " +percentTip+ "% tip and you gave the restaurant a " +serviceRating+ " rating. \nThe total amount with the tip and service rating is $" +totalWithTip+ ".");
+console.log("The total amount of your check was $" +checkTotal+ ". \nYou would like to leave a " +percentTip+ "% tip. \nYou gave the restaurant a " +serviceRating+ " rating. \nThe total amount with the tip and service rating is $" +totalWithTip+ ".");
 
 //alert to user
-alert("The total amount of your check was $" +checkTotal+ ". You would like to leave a " +percentTip+ "% tip and you gave the restaurant a " +serviceRating+ " rating. \nThe total amount with the tip and service rating is $" +totalWithTip+ ".");
+alert("The total amount of your check was $" +checkTotal+ ". \nYou would like to leave a " +percentTip+ "% tip. \nYou gave the restaurant a " +serviceRating+ " rating. \nThe total amount with the tip and service rating is $" +totalWithTip+ ".");
